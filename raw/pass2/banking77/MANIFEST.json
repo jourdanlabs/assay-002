@@ -1,0 +1,62 @@
+{
+ "assay": "ASSAY-002",
+ "step": "pass2",
+ "corpus": "banking77",
+ "tags": [
+  "pass2"
+ ],
+ "planned_records": 3080,
+ "planned_items": 3080,
+ "n": 3080,
+ "label_count": 77,
+ "labels_file": "labels/banking77.json",
+ "label_order_sha256": "d257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48",
+ "model_requested": "subq-snap-preview",
+ "api_url": "https://api.subq.ai/v1/systemone",
+ "instructions": "Which banking intent does this customer message express? Choose exactly one.",
+ "workers_initial": 4,
+ "workers_current": 4,
+ "circuit_breaker_trips": [],
+ "host": "Sokpyeons-MacBook-Pro-3.local",
+ "location": "Dallas, TX",
+ "started": "2026-10-12T22:20:55.377661-05:00",
+ "finished": "2026-10-12T22:24:30.031635-05:00",
+ "completed": true,
+ "protocol_sha256": "73587d0ea57e3480a9d5a0edd6b598653b4536072d0b1c607725090d2bfff78b",
+ "FREEZE.sha256": "73587d0ea57e3480a9d5a0edd6b598653b4536072d0b1c607725090d2bfff78b  PROTOCOL.md\nd448ca7f83ffa1e276af032f70f7c7bca353d96774258d1a40f7e0854e3c994d  SPEC-FOR-INDEPENDENT-SCORER.md\n25d113581f3191354ab3543d3450df18c97132189d5ab6c5a0f803b82d02dfd8  CORPUS.sha256\n962f61aca557ee9e8cfb6212cf92bb481905423c487bccef36ac776a832311c5  PINS.txt\n1edfd8f6d246482728fb8414ccd7172a746a660af357ff5ae56e46c11d8862e2  DOCS.sha256\n1649eda0c7620b04327af28252a200ea2da690f28e15de2a326b1a629ded2172  labels/b77-permutations-300.json\nd257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48  labels/banking77.json\nc06d3c60f52659311549b6b2f26b9fc5d9e5428b548d970da5b8c37582ccb9c1  labels/clinc150.json\nd1c581c7bbe9a111c6676a2ecc1a56217ddb0c82b05ee3f1561a5fb11da9c701  harness/controls.py\n86915d66fa7d20067a8a8550bebe50dbbb4e0e01ee389e59ebe360c2717f545f  harness/pairs.py\n1faff62fe44b8b1e68900382ed48bfb41814e9b81271b633e7100877e164d22f  harness/run.py\n1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a  harness/score.py\nb1892d8f45d41c5d8dcf3fff5e5cb823312273ea6cf4774c169e8fd9f2819575  AMENDMENT-1.md\n",
+ "freeze_file_sha256": "ab6a3ed265b6ae8bf3602e99315cf8eb46e3a365e2a327230fa71ac769b75f43",
+ "freeze_commit": "a161a4169593140d0f2ff829a2186dc02f54930f",
+ "CORPUS.sha256": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63  corpus/banking77/categories.json\nd12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d  corpus/banking77/test.csv\ne28704a3c04f6b05c286ca2a8891bbf32c69c000dedfc5825d6e1713369b7a89  corpus/clinc150/README.md\n3e60e45b25bf86543aa5df8ba4fcc674114164e6184f0197690648c2908d0102  corpus/clinc150/test.parquet\nf790bcd186bae056b54bd014ddd4be127b1dd5eb8353b0e04fbf148e3aab4688  corpus/clinc150/intent_names.json\n",
+ "DOCS.sha256": "84ef8684798215a2b49091bcea6b39573e427b4efd7c756d41ca0adb9b0f8718  docs/CAPTURE.json\n27825993c6a9f355b23491880e4cd72958242d68c0b9da6f9a7de6d1ba9ac049  docs/data-retention.md\n65fa1462bbf2bdb05b7fdb2dea76f4509582f37e135934fb5e33314d4a774ea2  docs/decisions-api.md\n25e968e055bc4aae646d20e91d864f011737ab975ef18d70fbbf48865fb4f85d  docs/introducing-subq-snap.html\n9d25ea04f812f00565d5fa0d5332dfc84b2519c6c38c94be307fa93f910b0d23  docs/introducing-subq-snap.txt\n69f877425ea8ece1125570f024ae8c0be667e74bbb81045f1273f254c5b21528  docs/llms.txt\n0a183f9c9e9bf69b731192c71106586cd3e01598bea064c703a2e0bbe0456d6d  docs/models.md\nfadddcae213dbe2677f8e7f550a01098153bb5a83b662c5f3f068cb9f15e6607  docs/terms.html\n55abe3756f1733f29a937219d4df88d6eeeb4c3a5458f258058551adc739076b  docs/terms.txt\n",
+ "docs_capture": {
+  "captured_start_utc": "2026-10-13T01:03:34Z",
+  "captured_end_utc": "2026-10-13T01:03:35Z"
+ },
+ "timeout_s": 60,
+ "retry_policy": {
+  "max_attempts": 8,
+  "retry_statuses": "429 and 5xx",
+  "backoff": "1 s doubling to 30 s; Retry-After wins when longer",
+  "network_errors": "no retry"
+ },
+ "cap_tokens": 60000000,
+ "input_tokens_before_step": 7247104,
+ "max_input_tokens_seen_before_step": 906,
+ "cap_projection": null,
+ "records_written": 3080,
+ "stop_reason": null,
+ "non_200_by_status": {},
+ "attempt_histogram": {
+  "1": 3080
+ },
+ "body_model_values": {
+  "subq-snap-preview": 3080
+ },
+ "input_tokens_this_step": 1911416,
+ "cumulative_input_tokens": 9158520,
+ "max_input_tokens_seen": 906,
+ "first_record_ts": 1791861655.681779,
+ "last_record_ts": 1791861869.904017,
+ "responses_sha256": "4447de2dcab9395ff00d219b333fb1a27a0060934853f312c41136ae36589028",
+ "failure": null
+}

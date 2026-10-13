@@ -1,0 +1,303 @@
+Subquadratic — Introducing SubQ Snap: A Long-Context Decision Model for Enterprise Agents
+Products
+SubQ Snap
+Long-context decision model
+SubQ Small
+Long-context language model
+Research
+Contact Sales
+Try it now
+Contact Sales
+Try it now
+Product
+Introducing SubQ Snap: A Long-Context Decision Model for Enterprise Agents
+Date
+October 12, 2026
+Subquadratic is the only company exclusively preoccupied with how foundation model algorithms scale with regards to compute, memory, and data. Most recent AI progress has come from scaling transformers with more parameters, data, and compute. We work on the scaling relationships underneath, with the goal of building most compute, memory, and sample efficient algorithms and models. We started with the attention, whose compute cost grows quadratically with context length in a standard transformer. To address this challenge, earlier this year we announced
+Subquadratic Sparse Attention (SSA)
+, the architectural innovation that powers
+SubQ
+, the first fully subquadratic LLM, which has remained frontier-competitive through its updates.
+Today we're releasing
+SubQ Snap
+, a decision model for agentic workflows built on the same foundational research. Our decision model is built to take the data-intensive but structured decisions inside an agentic workflow, like choosing which files are relevant, which tool to use next, whether a test result passes, or which step needs a frontier model. An agent makes these calls at nearly every turn, so a model that makes them quickly and correctly lowers the cost and latency of the whole workflow.
+Good decisions depend on context. Real-world workflows often require reasoning over large amounts of information, e.g. the right next action may depend on the rest of a codebase, earlier pages of a contract, or a long history of tool calls and previous actions. However, at long context, quadratic attention makes each call slow and expensive, which defeats the reason to use a decision model at all. So, today's decision models stay at 32K tokens and decide without most of what they need to see.
+Snap removes that trade-off. Powered by SSA, Snap is designed to process this growing context efficiently, without sacrificing the speed and accuracy that make a decision model useful in the first place. It makes each decision with up to 384K tokens of text and images, processes requests up to 100K tokens in under a second, and ranks four points above Jev on the Decision Index v0.2.1.
+This enables us to build the first decision model to take real work away from frontier LLMs. Today, decision models mostly work
+around
+the LLM: judging its outputs or selecting which LLM should handle each task. However, we believe that the decision models become far more exciting and useful when they can take on decisions within workflows that LLMs make today, and even in some cases complete large-scale tasks on their own.
+Below, we develop this aforementioned trade-off in more detail, describe how Snap is built and overcomes this tradeoff, and show how it performs on decision quality, long-context use, end-to-end agent tasks and cost.
+TL;DR
+Up to 384K tokens of context.
+Snap can reason over long codebases, documents, interaction histories, and other artifacts in a single call, without requiring truncation or chunking.
+Fast at long context.
+Snap can process 100K tokens and return a decision in ~1 second.
+Multimodal.
+Snap accepts text and images in the same context, allowing screenshots, charts, diagrams, and scanned pages to be reasoned over alongside the surrounding documents and logs.
+Strong long-context performance.
+Snap scores 96.3 on Decision RULER at 1MM tokens, and 74.0 on Decision LCR, compared to Jev's 48.0% aided by chunking.
+Competitive decision quality on enterprise tasks.
+Across 16 Decision Index benchmarks spanning tool use, security, legal, finance, support routing, and code, Snap averages 67.6 versus Jev's 61.6 and leads on 13 of 16 tasks.
+Achieves frontier performance on standard short-context evals.
+SubQ Snap scores 61.7 on the Decision Index public suite, where all requests are under 34k tokens, while Jev scores 57.9. It leads Jev in four of the five subareas, including arts & human taste (+12.11), language understanding (+7.46), retrieval & classification (+6.27), and tools & automation (+3.39).
+Cents per decision.
+Snap costs $0.05 per million input tokens, and output tokens are free.
+Decision RULER
+Context length
+SubQ Snap
+Jev
+32K
+99.8
+94.1
+64K
+99.8
+N/A
+128K
+99.5
+N/A
+256K
+99.8
+N/A
+Decision LCR
+Context length
+SubQ Snap (one-shot)
+Jev (chunked)
+72K–115K
+74.0
+48.0
+Decision Index
+Benchmark
+SubQ Snap
+Jev
+Decision Index 0.2.1 (full index, skill)
+61.7
+57.9
+Enterprise Workflows from Decision Index
+Workflow
+Benchmark
+What it tests
+SubQ Snap
+Jev
+Gain (pts)
+Customer support routing
+CLINC150+OOS
+Intent + out-of-scope
+91.5
+89.2
++2.3
+BANKING77
+Bank intent (77 classes)
+80.6
+79.5
++1.1
+Security
+PhishNChips
+Phishing detection
+47.1
+25.1
++22.0
+Search & retrieval
+Amazon ESCI
+Product relevance
+48.7
+43.8
++4.9
+BRIGHT
+Hard document ranking
+44.3
+40.6
++3.7
+Document verification
+RAGTruth
+RAG hallucination detection
+64.8
+51.3
++13.5
+HoVer
+Multi-doc claim checking
+54.2
+45.7
++8.5
+Legal
+ContractNLI
+Full-NDA clause review
+70.7
+59.1
++11.6
+Finance
+FinEntity
+Entity sentiment in fin news
+92.8
+80.8
++12.0
+Healthcare / pharma
+NLI4CT
+Clinical trial report NLI
+72.8
+69.0
++3.8
+Code
+CRUXEval
+Predict code output
+73.8
+57.1
++16.7
+Tool use / automation
+ToolRet
+Tool retrieval
+63.1
+59.9
++3.2
+BFCL
+Function calling
+96.2
+94.3
++1.9
+API-Bank
+Next API call
+86.4
+88.0
+−1.6
+When2Call
+Call, ask, answer or decline
+67.0
+74.6
+−7.6
+Customer feedback
+ACOS
+Aspect-level review analysis
+26.7
+27.3
+−0.6
+Average (16)
+67.54
+61.6
++5.96
+Nimble Suite 13
+Benchmark
+SubQ Snap
+Jev
+Nimble Suite 13 (macro, 13 decision sets)
+82.9%
+76.0%
+Agents need decisions, not just generation
+Many decisions inside an automated workflows do not require open-ended text generation. For instance, when choosing which files are relevant, which tool to use next, or whether a test result passes, the possible set of answers can be defined in advance. Decision models are built for these use cases. Given some context, a question, and a set of allowed answers, we sample a probability from the model for each answer instead of generating an open-ended response. This restriction from open-ended generation to an application-defined answer space is termed
+specialization
+, and the payoff is
+efficiency
+. Scoring pre-defined answers possibilities replaces autoregressive generation, removing the latency and cost of producing text the application does not need.
+Specialization defines a new interface for interacting with language models but does not prescribe an architecture. Thus, recent releases of decision models implement specialization in different ways.
+Laya
+,
+Perplexity's Decider
+, and TypeSafe's
+Jev
+expose the same interface (a question, a finite set of admissible answers, a structured prediction) but do so with differing architectural designs. For example, Laya pairs a bidirectional encoder with a decision head, while Decider v1.1 adapts a pre-trained language model to use non-causal attention.
+This interface can reduce the cost of agentic workflows by routing bounded decisions to a specialized model while reserving larger, more expensive generative model calls for tasks that actually require open-ended generation or extended reasoning. A coding agent, for example, can route tool selection and result verification to a decision model while reserving calls to a larger generative model for code synthesis and extended reasoning.
+However, a narrow answer space does not imply small context.
+Even a choice among just three tools can depend on evidence spread across a codebase or a long interaction history, and specialization does nothing to reduce the cost of processing it as input. That cost, attention over long context, is the constraint Snap is built to remove.
+The cost of context in agentic workflows
+In real-world agentic work flows, reliable decisions often depend on evidence throughout the context length, including far from the question. Intuitive examples include a user constraint stated 40 turns earlier, a function defined in different module in a large codebase, or a qualifying clause in a separate document. Current decision models can either process all of this evidence or reduce it via RAG-based and chunking workflows.
+Processing everything in a single request can significantly extend the context length the decision model needs to handle, and this sacrifices speed.
+For a decision model, nearly all inference compute is prefill.
+Eliminating autoregressive generation removes the cost of the output, not the cost of reading the input. Under dense self-attention, that cost grows quadratically with context length, so doubling the context quadruples attention compute.
+At long contexts, this erodes the savings that motivate decision models in the first place.
+On the other hand, reducing the input can sacrifice information. Retrieval, summarization, truncation, and chunking all make an upstream decision about what the model will and will not see. In practice, those reductions can become lossy: truncation may drop a constraint from 40 turns earlier, retrieval may miss relevant evidence, and summarization may remove details that turn out to matter later. Each additional step can also add latency and complexity to the workflow.
+This trade-off becomes especially important inside an agent loop, where the same model may be called repeatedly to make small but consequential decisions. Snap is designed to handle four common roles: Routing, Tool Picking, Checking, and Stopping.
+Each of these decisions may have a small answer space, but the evidence required to make it correctly can span a much larger artifact.
+SubQ Snap: Making long-context decisions efficient
+Snap supports up to 384K tokens of mixed text and image context. This allows an agent to analyze large artifacts such as a repository with its logs, a contract and its exhibits, or documents alongside screenshots, charts, and scanned pages.
+Snap is designed to avoid the trade-off between context and latency altogether. SSA makes long inputs more efficient to read, while a decision head makes bounded answers more efficient to produce.
+SSA reduces attention compute cost from quadratic to linear complexity, enabling Snap to process substantially more of the underlying artifact without paying the same attention cost as context grows. This makes it practical to extend sequence lengths much further without quadratic growth in compute and latency. A decision head then maps the resulting representations directly to a probability distribution over the allowed answers, avoiding autoregressive generation.
+Together, these address both sides of the decision-model workload:
+SSA addresses the cost of reading.
+Content-dependent selection reduces the attention work required to process long inputs, building on our
+earlier work
+.
+A decision head addresses the cost of answering.
+It maps contextual representations directly to a distribution over the admissible answers
+A
+, avoiding autoregressive generation.
+Evaluation
+We evaluate Snap along four dimensions that reflect both what a decision model needs to do well and the workloads we built Snap to handle.
+First, general decision quality. Snap is still a decision model, so it needs to make accurate choices across a broad range of tasks. We measure this using Decision Index and Bespoke Labs' Nimble benchmark.
+Second, enterprise decision quality. Our focus is enterprise workflows. Not every task in a broad index reflects how enterprises will use decision models. We therefore separately evaluate a subset of the Decision Index that maps most closely to enterprise workloads, such as tool use, support routing, security, legal, finance, document verification, and code.
+Third, long-context retrieval. One of our core theses is that better decisions are made when you reason over the entire artifact. Retrieval is therefore a prerequisite for many of the workflows Snap is designed to support, and it is also a capability that SSA is intended to make practical at long context lengths. We evaluate this using Decision RULER, which tests the model over 11 different types of long-context retrieval tasks.
+Finally, long context reasoning. Finding the relevant evidence is only part of the task. The model also needs to combine information from different parts of an artifact or across multiple documents to reach the right decision. We evaluate this using Decision AA-LCR, which tests reasoning over real multi-document inputs.
+Together, these evaluations test whether Snap can do more than perform well on decision benchmarks. They test whether it can make the kinds of decisions required in real enterprise workflows.
+General Decision Quality
+We evaluate general decision quality using the Decision Index and Bespoke Labs' Nimble collection of benchmarks.
+Decision Index
+The
+Decision Index
+is the public benchmark for decision models. It spans 37 benchmarks in five weighted areas. Each benchmark is posed as a multiple-choice decision and scored such that the random guessing counts as 0 and a perfect answer as 100. This ensures tasks with various number of options will be compared fairly. Every request in the index is a short decision where the longest is about 34K tokens, meaning it measures short-context decisions. Snap scored a
+61.70
+compared with
+57.90
+for Jev on the Decision Index 0.2.1 and outperforms Jev on four out the five major categories, including arts & human taste (+12.11), language understanding (+7.46), retrieval & classification (+6.27), and tools & automation (+3.39).
+Bespoke Nimble
+Bespoke Labs'
+Nimble benchmark
+contains 3,880 human-labelled examples from 13 public datasets covering tasks including safety classification, intent detection, paraphrase, entailment, biomedical questions, and summary quality. Snap averages
+82.9% accuracy
+, compared with
+76.0%
+for Jev.
+Enterprise Decision Quality
+Decision Index Enterprise Workflows
+Aggregate benchmarks can hide where models differ, so we also examine 16 Decision Index benchmarks that map directly to common enterprise workflows.
+Across these benchmarks, Snap averages
+67.6
+, compared with
+61.6
+for Jev, and leads on
+13 of 16
+benchmarks. Its largest gains appear in phishing detection, code execution prediction, financial sentiment, customer-support routing, and contract review.
+Long-context Retrieval
+Decision RULER
+RULER hides facts or needles in long filler text and asks the model to find, track, or count them. We refactored 11 of RULER's 13 tasks into multiple-choice decisions while preserving the original samples, distractors, and hidden facts.
+We replace the open-ended answer with four options. Where possible, the wrong options also appear somewhere in the filler, ensuring that the model has to find the correct one. We drop the two question-answering tasks because we observed that the models could answer them from the memory even when the context is removed.
+Snap scores between
+96.3
+and
+99.8
+from 32K to 1M tokens, showing that retrieval capability remains high on long context.
+Decision LCR
+Decision LCR adapts
+AA-LCR
+, a long-context benchmark from Artificial Analysis contains 100 human-authored questions over real multi-document sets of 72K-115K tokens. We convert these 100 questions into 118 multiple-choice decisions. Each decision is evaluated three times with different option orderings to avoid position-bias in the evaluation, and a question receives credit only if every part is answered correctly. The randomness/chance is 19.2 and models score 24-25 with the documents removed.
+SubQ Snap scores
+74.0
+and the Jev model scored
+48.0
+, a 26 point lead with a confidence interval of 95%. Decision LCR scores can't be compared with published AA-LCR results, which grade written answers rather than decisions. This result both demonstrates the long-context reasoning capability of Snap while also demonstrating that many problems benefit from whole-artifact reasoning more than reasoning over chunks.
+Pricing and availability
+SubQ Snap is priced at $0.05 per million input tokens, with no charge for output tokens.
+SubQ Snap is available in
+Public Preview
+on a first come, first served basis while capacity is limited. Once capacity is reached, new users may be added to a waitlist. Broader availability will follow as we bring additional capacity online.
+Try SubQ Snap today at
+subq.ai
+.
+Snap is just the start. SubQ 1.1 Small, our Language Model, is in
+Early Access
+with selected design partners. If you'd like to be considered, contact us at
+sales@subq.ai
+.
+Frontier AI research company building models that scale efficiently.
+Products
+SubQ Snap
+SubQ Medium
+Company
+Research
+Docs
+Connect
+X
+LinkedIn
+Discord
+© 2026 Subquadratic
+Privacy
+·
+Terms
+·
+Usage Policy
