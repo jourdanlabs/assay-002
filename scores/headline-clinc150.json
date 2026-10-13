@@ -1,0 +1,19 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "calibration_sentences": {
+  "clinc150": "On CLINC150, Snap's chosen-option probabilities measured ECE 0.0560 (pass 1; 0.0559\u20130.0560 over three passes), outside the 0.05 line ASSAY-001 used, underconfident in every bin with at least 50 items (pass-1 95% interval 0.0491\u20130.0630 includes 0.05)."
+ },
+ "type_error_sentence": "Across 16495 responses there were zero type errors under the checks ASSAY-001 used.",
+ "accuracy_caveat": "Both corpora are public and old and both appear in Snap's own launch table, so accuracy is reported, not judged.",
+ "limit_clause": "A result applies to the artifacts and criteria examined: `subq-snap-preview` as served between 2026-10-12T22:13:50.912657-05:00 and 2026-10-12T22:42:20.118434-05:00 (response `model` values: `subq-snap-preview`), Choice questions with null option descriptions in ASSAY-001's option order, these two corpora, and the docs pages hashed at freeze. It is not a statement about Snap on any other task, question type, corpus, context length or day.",
+ "travel_together": [
+  "On CLINC150, Snap's chosen-option probabilities measured ECE 0.0560 (pass 1; 0.0559\u20130.0560 over three passes), outside the 0.05 line ASSAY-001 used, underconfident in every bin with at least 50 items (pass-1 95% interval 0.0491\u20130.0630 includes 0.05).",
+  "Across 16495 responses there were zero type errors under the checks ASSAY-001 used.",
+  "A result applies to the artifacts and criteria examined: `subq-snap-preview` as served between 2026-10-12T22:13:50.912657-05:00 and 2026-10-12T22:42:20.118434-05:00 (response `model` values: `subq-snap-preview`), Choice questions with null option descriptions in ASSAY-001's option order, these two corpora, and the docs pages hashed at freeze. It is not a statement about Snap on any other task, question type, corpus, context length or day."
+ ]
+}

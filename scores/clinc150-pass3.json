@@ -1,0 +1,244 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "clinc150",
+ "pass": 3,
+ "completed": true,
+ "input": {
+  "path": "raw/pass3/clinc150/responses.jsonl",
+  "sha256": "70b39315b1d04025d75a329378d991a3c3cf1e77e3e241bd5c642537bf6d37cd"
+ },
+ "labels": {
+  "path": "labels/clinc150.json",
+  "sha256": "c06d3c60f52659311549b6b2f26b9fc5d9e5428b548d970da5b8c37582ccb9c1",
+  "count": 151
+ },
+ "manifest": {
+  "step": "pass3",
+  "corpus": "clinc150",
+  "tags": [
+   "pass3"
+  ],
+  "location": "Dallas, TX",
+  "host": "Sokpyeons-MacBook-Pro-3.local",
+  "workers_initial": 4,
+  "workers_current": 4,
+  "started": "2026-10-12T22:36:02.751184-05:00",
+  "finished": "2026-10-12T22:42:20.458565-05:00",
+  "completed": true,
+  "protocol_sha256": "73587d0ea57e3480a9d5a0edd6b598653b4536072d0b1c607725090d2bfff78b"
+ },
+ "latency_location": "Dallas, TX",
+ "latency_note": "observed end-to-end from Dallas, TX; includes network",
+ "record_ts_min": 1791862563.100372,
+ "record_ts_max": 1791862940.118434,
+ "metrics": {
+  "records": 5500,
+  "non_200": 0,
+  "non_200_by_status": {},
+  "scored": 5500,
+  "violations": 0,
+  "violations_documented": 0,
+  "violations_undocumented_only": 0,
+  "sum_min": 1.0,
+  "sum_max": 1.0,
+  "sum_off_1e3": 0,
+  "accuracy": 0.9093,
+  "mean_p": 0.8533,
+  "signed_gap": -0.0559,
+  "ECE": 0.0559,
+  "ECE_ci": [
+   0.0491,
+   0.0627
+  ],
+  "noise_mean": 0.0091,
+  "noise_p95": 0.0134,
+  "ECE_equal_mass": 0.0559,
+  "MCE_all": 0.1559,
+  "MCE_50": 0.1518,
+  "Brier": 0.1521,
+  "direction": "under",
+  "bins": [
+   {
+    "bin": 1,
+    "n": 7,
+    "mean_p": 0.1736,
+    "acc": 0.2857,
+    "gap": -0.1121
+   },
+   {
+    "bin": 2,
+    "n": 49,
+    "mean_p": 0.2523,
+    "acc": 0.4082,
+    "gap": -0.1559
+   },
+   {
+    "bin": 3,
+    "n": 79,
+    "mean_p": 0.3545,
+    "acc": 0.5063,
+    "gap": -0.1518
+   },
+   {
+    "bin": 4,
+    "n": 165,
+    "mean_p": 0.4536,
+    "acc": 0.6,
+    "gap": -0.1464
+   },
+   {
+    "bin": 5,
+    "n": 219,
+    "mean_p": 0.5492,
+    "acc": 0.6849,
+    "gap": -0.1358
+   },
+   {
+    "bin": 6,
+    "n": 289,
+    "mean_p": 0.6516,
+    "acc": 0.7716,
+    "gap": -0.12
+   },
+   {
+    "bin": 7,
+    "n": 433,
+    "mean_p": 0.756,
+    "acc": 0.8707,
+    "gap": -0.1147
+   },
+   {
+    "bin": 8,
+    "n": 1084,
+    "mean_p": 0.8585,
+    "acc": 0.9216,
+    "gap": -0.0631
+   },
+   {
+    "bin": 9,
+    "n": 3175,
+    "mean_p": 0.9482,
+    "acc": 0.9735,
+    "gap": -0.0254
+   }
+  ],
+  "gt09": {
+   "n": 3175,
+   "share": 0.5773,
+   "acc": 0.9735,
+   "wilson": [
+    0.9674,
+    0.9786
+   ]
+  },
+  "ge09": {
+   "n": 3175,
+   "share": 0.5773,
+   "acc": 0.9735,
+   "wilson": [
+    0.9674,
+    0.9786
+   ]
+  },
+  "atom1": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "floor": {
+   "wrong_all": 499,
+   "wrong_shipped": 84,
+   "right_share_shipped": 0.9735,
+   "refused_share": 0.4227
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 269.8,
+  "latency_p95": 306.7,
+  "latency_p99": 339.2,
+  "attempts": {
+   "1": 5500
+  },
+  "models": {
+   "subq-snap-preview": 5500
+  },
+  "input_tokens_sum": 4856737,
+  "conf_deciles": [
+   {
+    "n": 550,
+    "mean_confidence": 0.461,
+    "accuracy": 0.6055
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.6991,
+    "accuracy": 0.8236
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.8163,
+    "accuracy": 0.9109
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.8721,
+    "accuracy": 0.9164
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.9066,
+    "accuracy": 0.9473
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.9277,
+    "accuracy": 0.9491
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.9441,
+    "accuracy": 0.9636
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.9556,
+    "accuracy": 0.9891
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.9646,
+    "accuracy": 0.9891
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.9766,
+    "accuracy": 0.9982
+   }
+  ],
+  "conf_monotone": true,
+  "ECE_conf": 0.0569,
+  "conf_atom1_share": 0.0,
+  "oos": {
+   "n_oos": 1000,
+   "n_inscope": 4500,
+   "acc_oos": 0.83,
+   "acc_inscope": 0.9269,
+   "mean_p_oos": 0.7414,
+   "mean_p_inscope": 0.8782,
+   "mean_conf_oos": 0.7397,
+   "mean_conf_inscope": 0.8774,
+   "high_p_wrong_oos": 0.027,
+   "AUROC": 0.8058
+  }
+ },
+ "violation_records": [],
+ "argmax_exception_ids": []
+}

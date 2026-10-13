@@ -1,0 +1,19 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "calibration_sentences": {
+  "banking77": "On Banking77, Snap's chosen-option probabilities measured ECE 0.0335 (pass 1; 0.0328\u20130.0335 over three passes), inside the 0.05 line ASSAY-001 used."
+ },
+ "type_error_sentence": "Across 9235 responses there were zero type errors under the checks ASSAY-001 used.",
+ "accuracy_caveat": "Both corpora are public and old and both appear in Snap's own launch table, so accuracy is reported, not judged.",
+ "limit_clause": "A result applies to the artifacts and criteria examined: `subq-snap-preview` as served between 2026-10-12T22:09:13.327986-05:00 and 2026-10-12T22:35:56.116940-05:00 (response `model` values: `subq-snap-preview`), Choice questions with null option descriptions in ASSAY-001's option order, these two corpora, and the docs pages hashed at freeze. It is not a statement about Snap on any other task, question type, corpus, context length or day.",
+ "travel_together": [
+  "On Banking77, Snap's chosen-option probabilities measured ECE 0.0335 (pass 1; 0.0328\u20130.0335 over three passes), inside the 0.05 line ASSAY-001 used.",
+  "Across 9235 responses there were zero type errors under the checks ASSAY-001 used.",
+  "A result applies to the artifacts and criteria examined: `subq-snap-preview` as served between 2026-10-12T22:09:13.327986-05:00 and 2026-10-12T22:35:56.116940-05:00 (response `model` values: `subq-snap-preview`), Choice questions with null option descriptions in ASSAY-001's option order, these two corpora, and the docs pages hashed at freeze. It is not a statement about Snap on any other task, question type, corpus, context length or day."
+ ]
+}

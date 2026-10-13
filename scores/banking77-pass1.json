@@ -1,0 +1,235 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "banking77",
+ "pass": 1,
+ "completed": true,
+ "input": {
+  "path": "raw/pass1/banking77/responses.jsonl",
+  "sha256": "a191c4ee5e48c711c506e4d159eb4b7c4a7867d0f7b2cc2e0c7ffafa5ac6412e"
+ },
+ "labels": {
+  "path": "labels/banking77.json",
+  "sha256": "d257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48",
+  "count": 77
+ },
+ "manifest": {
+  "step": "pass1",
+  "corpus": "banking77",
+  "tags": [
+   "pass1"
+  ],
+  "location": "Dallas, TX",
+  "host": "Sokpyeons-MacBook-Pro-3.local",
+  "workers_initial": 4,
+  "workers_current": 4,
+  "started": "2026-10-12T22:09:13.003897-05:00",
+  "finished": "2026-10-12T22:12:45.442328-05:00",
+  "completed": true,
+  "protocol_sha256": "73587d0ea57e3480a9d5a0edd6b598653b4536072d0b1c607725090d2bfff78b"
+ },
+ "latency_location": "Dallas, TX",
+ "latency_note": "observed end-to-end from Dallas, TX; includes network",
+ "record_ts_min": 1791860953.327986,
+ "record_ts_max": 1791861165.323303,
+ "metrics": {
+  "records": 3080,
+  "non_200": 1,
+  "non_200_by_status": {
+   "0": 1
+  },
+  "scored": 3079,
+  "violations": 0,
+  "violations_documented": 0,
+  "violations_undocumented_only": 0,
+  "sum_min": 1.0,
+  "sum_max": 1.0,
+  "sum_off_1e3": 0,
+  "accuracy": 0.8058,
+  "mean_p": 0.8254,
+  "signed_gap": 0.0196,
+  "ECE": 0.0335,
+  "ECE_ci": [
+   0.024,
+   0.0454
+  ],
+  "noise_mean": 0.0131,
+  "noise_p95": 0.0198,
+  "ECE_equal_mass": 0.0334,
+  "MCE_all": 0.2022,
+  "MCE_50": 0.1173,
+  "Brier": 0.2823,
+  "direction": "mixed",
+  "bins": [
+   {
+    "bin": 1,
+    "n": 4,
+    "mean_p": 0.1883,
+    "acc": 0.0,
+    "gap": 0.1883
+   },
+   {
+    "bin": 2,
+    "n": 14,
+    "mean_p": 0.2736,
+    "acc": 0.0714,
+    "gap": 0.2022
+   },
+   {
+    "bin": 3,
+    "n": 73,
+    "mean_p": 0.3557,
+    "acc": 0.274,
+    "gap": 0.0817
+   },
+   {
+    "bin": 4,
+    "n": 149,
+    "mean_p": 0.4531,
+    "acc": 0.3893,
+    "gap": 0.0638
+   },
+   {
+    "bin": 5,
+    "n": 186,
+    "mean_p": 0.5499,
+    "acc": 0.4516,
+    "gap": 0.0982
+   },
+   {
+    "bin": 6,
+    "n": 240,
+    "mean_p": 0.6506,
+    "acc": 0.5333,
+    "gap": 0.1173
+   },
+   {
+    "bin": 7,
+    "n": 285,
+    "mean_p": 0.7517,
+    "acc": 0.7123,
+    "gap": 0.0394
+   },
+   {
+    "bin": 8,
+    "n": 567,
+    "mean_p": 0.8591,
+    "acc": 0.8501,
+    "gap": 0.009
+   },
+   {
+    "bin": 9,
+    "n": 1561,
+    "mean_p": 0.9505,
+    "acc": 0.9641,
+    "gap": -0.0136
+   }
+  ],
+  "gt09": {
+   "n": 1561,
+   "share": 0.507,
+   "acc": 0.9641,
+   "wilson": [
+    0.9537,
+    0.9723
+   ]
+  },
+  "ge09": {
+   "n": 1561,
+   "share": 0.507,
+   "acc": 0.9641,
+   "wilson": [
+    0.9537,
+    0.9723
+   ]
+  },
+  "atom1": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "floor": {
+   "wrong_all": 598,
+   "wrong_shipped": 56,
+   "right_share_shipped": 0.9641,
+   "refused_share": 0.493
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 265.0,
+  "latency_p95": 306.3,
+  "latency_p99": 324.2,
+  "attempts": {
+   "1": 3080
+  },
+  "models": {
+   "subq-snap-preview": 3079
+  },
+  "input_tokens_sum": 1910798,
+  "conf_deciles": [
+   {
+    "n": 308,
+    "mean_confidence": 0.4258,
+    "accuracy": 0.3571
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.6072,
+    "accuracy": 0.4805
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.7341,
+    "accuracy": 0.7045
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.8292,
+    "accuracy": 0.8149
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.8827,
+    "accuracy": 0.8799
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.9157,
+    "accuracy": 0.9318
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.9378,
+    "accuracy": 0.9578
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.9544,
+    "accuracy": 0.9513
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.9674,
+    "accuracy": 0.9838
+   },
+   {
+    "n": 307,
+    "mean_confidence": 0.9776,
+    "accuracy": 0.9967
+   }
+  ],
+  "conf_monotone": false,
+  "ECE_conf": 0.0312,
+  "conf_atom1_share": 0.0,
+  "oos": null
+ },
+ "violation_records": [],
+ "argmax_exception_ids": []
+}

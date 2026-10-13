@@ -1,0 +1,52 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-pairs.py",
+  "file": "harness/pairs.py",
+  "sha256": "86915d66fa7d20067a8a8550bebe50dbbb4e0e01ee389e59ebe360c2717f545f",
+  "score_sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a"
+ },
+ "inputs": {
+  "file_a": {
+   "path": "raw/order-probe/banking77/responses.jsonl",
+   "sha256": "b51a20d0d961d1ddd215f6eb2a63d6b0acf307e862241d2e376cfbb079ea0890",
+   "tag": "O"
+  },
+  "file_b": {
+   "path": "raw/order-probe/banking77/responses.jsonl",
+   "sha256": "b51a20d0d961d1ddd215f6eb2a63d6b0acf307e862241d2e376cfbb079ea0890",
+   "tag": "S"
+  },
+  "labels": null
+ },
+ "metrics": {
+  "n_pairs": 300,
+  "flips": 35,
+  "flip_rate": 0.1167,
+  "both_le09": 35,
+  "both_lt09": 35,
+  "acc_A_flipped": 0.5143,
+  "acc_B_flipped": 0.2,
+  "acc_stable": 0.8792,
+  "absdp_median": 0.0297,
+  "absdp_gt005_share": 0.3849,
+  "cross_09": 40
+ },
+ "supplementary": {
+  "absdp_all_quantiles": {
+   "min": 0.0,
+   "p25": 0.0138,
+   "median": 0.0337,
+   "p75": 0.1129,
+   "p95": 0.2681,
+   "max": 0.4006
+  },
+  "absdp_stable_quantiles": {
+   "min": 0.0,
+   "p25": 0.0131,
+   "median": 0.0297,
+   "p75": 0.0846,
+   "p95": 0.2174,
+   "max": 0.3834
+  }
+ }
+}

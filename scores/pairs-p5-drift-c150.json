@@ -1,0 +1,52 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-pairs.py",
+  "file": "harness/pairs.py",
+  "sha256": "86915d66fa7d20067a8a8550bebe50dbbb4e0e01ee389e59ebe360c2717f545f",
+  "score_sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a"
+ },
+ "inputs": {
+  "file_a": {
+   "path": "raw/drift/start/clinc150/responses.jsonl",
+   "sha256": "5ea6d88c366305a3223af8cd8d573f7d0f72c40f28d85b301a0d984ec19985d1",
+   "tag": "-"
+  },
+  "file_b": {
+   "path": "raw/drift/end/clinc150/responses.jsonl",
+   "sha256": "dfd27b3660472ec9d07d9d229551ec03c08e1c38d4d3de5c5d2a03ec912d13e8",
+   "tag": "-"
+  },
+  "labels": null
+ },
+ "metrics": {
+  "n_pairs": 50,
+  "flips": 0,
+  "flip_rate": 0.0,
+  "both_le09": 0,
+  "both_lt09": 0,
+  "acc_A_flipped": null,
+  "acc_B_flipped": null,
+  "acc_stable": 0.98,
+  "absdp_median": 0.0,
+  "absdp_gt005_share": 0.0,
+  "cross_09": 0
+ },
+ "supplementary": {
+  "absdp_all_quantiles": {
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "p95": 0.0,
+   "max": 0.0017
+  },
+  "absdp_stable_quantiles": {
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "p95": 0.0,
+   "max": 0.0017
+  }
+ }
+}
