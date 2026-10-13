@@ -1,0 +1,338 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "banking77",
+ "pass": null,
+ "completed": true,
+ "input": {
+  "path": "controls/banking77/broken-schema.jsonl",
+  "sha256": "26d7f425be03a5d03097fd23d73230bf9459e5871d35acf30dbc31bf7d37c954"
+ },
+ "labels": {
+  "path": "labels/banking77.json",
+  "sha256": "d257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48",
+  "count": 77
+ },
+ "manifest": null,
+ "latency_location": null,
+ "latency_note": null,
+ "record_ts_min": 0.0,
+ "record_ts_max": 0.0,
+ "metrics": {
+  "records": 3080,
+  "non_200": 0,
+  "non_200_by_status": {},
+  "scored": 3080,
+  "violations": 29,
+  "violations_documented": 29,
+  "violations_undocumented_only": 0,
+  "sum_min": 0.987,
+  "sum_max": 1.0,
+  "sum_off_1e3": 29,
+  "accuracy": 0.0153,
+  "mean_p": 0.013,
+  "signed_gap": -0.0023,
+  "ECE": 0.0023,
+  "ECE_ci": [
+   0.0,
+   0.0068
+  ],
+  "noise_mean": 0.0016,
+  "noise_p95": 0.0039,
+  "ECE_equal_mass": 0.0049,
+  "MCE_all": 0.0023,
+  "MCE_50": 0.0023,
+  "Brier": 0.987,
+  "direction": "under",
+  "bins": [
+   {
+    "bin": 0,
+    "n": 3080,
+    "mean_p": 0.013,
+    "acc": 0.0153,
+    "gap": -0.0023
+   }
+  ],
+  "gt09": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "ge09": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "atom1": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "floor": {
+   "wrong_all": 3033,
+   "wrong_shipped": 0,
+   "right_share_shipped": null,
+   "refused_share": 1.0
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 100.0,
+  "latency_p95": 100.0,
+  "latency_p99": 100.0,
+  "attempts": {
+   "1": 3080
+  },
+  "models": {
+   "control": 3080
+  },
+  "input_tokens_sum": 0,
+  "conf_deciles": [
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.013
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0195
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0227
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.026
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.013
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0097
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0195
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0097
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0097
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0097
+   }
+  ],
+  "conf_monotone": false,
+  "ECE_conf": 0.0023,
+  "conf_atom1_share": 0.0,
+  "oos": null
+ },
+ "violation_records": [
+  {
+   "id": "b77-0012",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0095",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0247",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0268",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0273",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0281",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0468",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0533",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0793",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0834",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-0894",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1058",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1136",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1186",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1341",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1383",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1875",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1896",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1918",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-1921",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2102",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2350",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2365",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2382",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2420",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2630",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2838",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-2917",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "b77-3033",
+   "checks_failed": [
+    "e"
+   ]
+  }
+ ],
+ "argmax_exception_ids": []
+}

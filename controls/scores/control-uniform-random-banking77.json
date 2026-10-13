@@ -1,0 +1,163 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "banking77",
+ "pass": null,
+ "completed": true,
+ "input": {
+  "path": "controls/banking77/uniform-random.jsonl",
+  "sha256": "45e4142353717bc20869b497a0df3c3952b7a7e3f1968af3db72bc47c993d09a"
+ },
+ "labels": {
+  "path": "labels/banking77.json",
+  "sha256": "d257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48",
+  "count": 77
+ },
+ "manifest": null,
+ "latency_location": null,
+ "latency_note": null,
+ "record_ts_min": 0.0,
+ "record_ts_max": 0.0,
+ "metrics": {
+  "records": 3080,
+  "non_200": 0,
+  "non_200_by_status": {},
+  "scored": 3080,
+  "violations": 0,
+  "violations_documented": 0,
+  "violations_undocumented_only": 0,
+  "sum_min": 1.0,
+  "sum_max": 1.0,
+  "sum_off_1e3": 0,
+  "accuracy": 0.014,
+  "mean_p": 0.013,
+  "signed_gap": -0.001,
+  "ECE": 0.001,
+  "ECE_ci": [
+   0.0,
+   0.0052
+  ],
+  "noise_mean": 0.0016,
+  "noise_p95": 0.0039,
+  "ECE_equal_mass": 0.0042,
+  "MCE_all": 0.001,
+  "MCE_50": 0.001,
+  "Brier": 0.987,
+  "direction": "under",
+  "bins": [
+   {
+    "bin": 0,
+    "n": 3080,
+    "mean_p": 0.013,
+    "acc": 0.014,
+    "gap": -0.001
+   }
+  ],
+  "gt09": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "ge09": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "atom1": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "floor": {
+   "wrong_all": 3037,
+   "wrong_shipped": 0,
+   "right_share_shipped": null,
+   "refused_share": 1.0
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 100.0,
+  "latency_p95": 100.0,
+  "latency_p99": 100.0,
+  "attempts": {
+   "1": 3080
+  },
+  "models": {
+   "control": 3080
+  },
+  "input_tokens_sum": 0,
+  "conf_deciles": [
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0097
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0195
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0065
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0162
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0162
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0065
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.013
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0227
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.0162
+   },
+   {
+    "n": 308,
+    "mean_confidence": 0.013,
+    "accuracy": 0.013
+   }
+  ],
+  "conf_monotone": false,
+  "ECE_conf": 0.001,
+  "conf_atom1_share": 0.0,
+  "oos": null
+ },
+ "violation_records": [],
+ "argmax_exception_ids": []
+}

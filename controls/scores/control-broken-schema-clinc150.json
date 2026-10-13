@@ -1,0 +1,529 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "clinc150",
+ "pass": null,
+ "completed": true,
+ "input": {
+  "path": "controls/clinc150/broken-schema.jsonl",
+  "sha256": "c940415aa58a826b6965e03fd5f69c7f5fd200fbf0134673b2cfcd5f224762aa"
+ },
+ "labels": {
+  "path": "labels/clinc150.json",
+  "sha256": "c06d3c60f52659311549b6b2f26b9fc5d9e5428b548d970da5b8c37582ccb9c1",
+  "count": 151
+ },
+ "manifest": null,
+ "latency_location": null,
+ "latency_note": null,
+ "record_ts_min": 0.0,
+ "record_ts_max": 0.0,
+ "metrics": {
+  "records": 5500,
+  "non_200": 0,
+  "non_200_by_status": {},
+  "scored": 5500,
+  "violations": 59,
+  "violations_documented": 59,
+  "violations_undocumented_only": 0,
+  "sum_min": 0.9934,
+  "sum_max": 1.0,
+  "sum_off_1e3": 59,
+  "accuracy": 0.0071,
+  "mean_p": 0.0066,
+  "signed_gap": -0.0005,
+  "ECE": 0.0005,
+  "ECE_ci": [
+   0.0001,
+   0.0027
+  ],
+  "noise_mean": 0.0009,
+  "noise_p95": 0.0021,
+  "ECE_equal_mass": 0.0027,
+  "MCE_all": 0.0005,
+  "MCE_50": 0.0005,
+  "Brier": 0.9934,
+  "direction": "under",
+  "bins": [
+   {
+    "bin": 0,
+    "n": 5500,
+    "mean_p": 0.0066,
+    "acc": 0.0071,
+    "gap": -0.0005
+   }
+  ],
+  "gt09": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "ge09": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "atom1": {
+   "n": 0,
+   "share": 0.0,
+   "acc": null,
+   "wilson": [
+    null,
+    null
+   ]
+  },
+  "floor": {
+   "wrong_all": 5461,
+   "wrong_shipped": 0,
+   "right_share_shipped": null,
+   "refused_share": 1.0
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 100.0,
+  "latency_p95": 100.0,
+  "latency_p99": 100.0,
+  "attempts": {
+   "1": 5500
+  },
+  "models": {
+   "control": 5500
+  },
+  "input_tokens_sum": 0,
+  "conf_deciles": [
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0055
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0018
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0036
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0145
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0073
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0091
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0091
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0091
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0055
+   },
+   {
+    "n": 550,
+    "mean_confidence": 0.0066,
+    "accuracy": 0.0055
+   }
+  ],
+  "conf_monotone": false,
+  "ECE_conf": 0.0005,
+  "conf_atom1_share": 0.0,
+  "oos": {
+   "n_oos": 1000,
+   "n_inscope": 4500,
+   "acc_oos": 0.006,
+   "acc_inscope": 0.0073,
+   "mean_p_oos": 0.0066,
+   "mean_p_inscope": 0.0066,
+   "mean_conf_oos": 0.0066,
+   "mean_conf_inscope": 0.0066,
+   "high_p_wrong_oos": 0.0,
+   "AUROC": 0.5
+  }
+ },
+ "violation_records": [
+  {
+   "id": "c150-0012",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0095",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0246",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0267",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0272",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0279",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0463",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0528",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0785",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0826",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-0885",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1049",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1125",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1175",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1203",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1328",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1369",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1858",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1879",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1900",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-1903",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2082",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2327",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2342",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2359",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2397",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2606",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2812",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-2890",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3006",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3055",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3096",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3218",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3471",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3503",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3515",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-3516",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4005",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4135",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4218",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4340",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4350",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4412",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4473",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4630",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4709",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4811",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4928",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-4933",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5051",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5097",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5146",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5175",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5240",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5343",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5390",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5442",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5458",
+   "checks_failed": [
+    "e"
+   ]
+  },
+  {
+   "id": "c150-5465",
+   "checks_failed": [
+    "e"
+   ]
+  }
+ ],
+ "argmax_exception_ids": []
+}

@@ -1,0 +1,174 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "clinc150",
+ "pass": null,
+ "completed": true,
+ "input": {
+  "path": "controls/clinc150/perfect-oracle.jsonl",
+  "sha256": "1fd1c5d8c298800d00b22a7da94b5e178a914d215a0c3fab60e1d40c3cec6795"
+ },
+ "labels": {
+  "path": "labels/clinc150.json",
+  "sha256": "c06d3c60f52659311549b6b2f26b9fc5d9e5428b548d970da5b8c37582ccb9c1",
+  "count": 151
+ },
+ "manifest": null,
+ "latency_location": null,
+ "latency_note": null,
+ "record_ts_min": 0.0,
+ "record_ts_max": 0.0,
+ "metrics": {
+  "records": 5500,
+  "non_200": 0,
+  "non_200_by_status": {},
+  "scored": 5500,
+  "violations": 0,
+  "violations_documented": 0,
+  "violations_undocumented_only": 0,
+  "sum_min": 1.0,
+  "sum_max": 1.0,
+  "sum_off_1e3": 0,
+  "accuracy": 1.0,
+  "mean_p": 1.0,
+  "signed_gap": 0.0,
+  "ECE": 0.0,
+  "ECE_ci": [
+   0.0,
+   0.0
+  ],
+  "noise_mean": 0.0,
+  "noise_p95": 0.0,
+  "ECE_equal_mass": 0.0,
+  "MCE_all": 0.0,
+  "MCE_50": 0.0,
+  "Brier": 0.0,
+  "direction": "over",
+  "bins": [
+   {
+    "bin": 9,
+    "n": 5500,
+    "mean_p": 1.0,
+    "acc": 1.0,
+    "gap": 0.0
+   }
+  ],
+  "gt09": {
+   "n": 5500,
+   "share": 1.0,
+   "acc": 1.0,
+   "wilson": [
+    0.9993,
+    1.0
+   ]
+  },
+  "ge09": {
+   "n": 5500,
+   "share": 1.0,
+   "acc": 1.0,
+   "wilson": [
+    0.9993,
+    1.0
+   ]
+  },
+  "atom1": {
+   "n": 5500,
+   "share": 1.0,
+   "acc": 1.0,
+   "wilson": [
+    0.9993,
+    1.0
+   ]
+  },
+  "floor": {
+   "wrong_all": 0,
+   "wrong_shipped": 0,
+   "right_share_shipped": 1.0,
+   "refused_share": 0.0
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 100.0,
+  "latency_p95": 100.0,
+  "latency_p99": 100.0,
+  "attempts": {
+   "1": 5500
+  },
+  "models": {
+   "control": 5500
+  },
+  "input_tokens_sum": 0,
+  "conf_deciles": [
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 550,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   }
+  ],
+  "conf_monotone": true,
+  "ECE_conf": 0.0,
+  "conf_atom1_share": 1.0,
+  "oos": {
+   "n_oos": 1000,
+   "n_inscope": 4500,
+   "acc_oos": 1.0,
+   "acc_inscope": 1.0,
+   "mean_p_oos": 1.0,
+   "mean_p_inscope": 1.0,
+   "mean_conf_oos": 1.0,
+   "mean_conf_inscope": 1.0,
+   "high_p_wrong_oos": 0.0,
+   "AUROC": 0.5
+  }
+ },
+ "violation_records": [],
+ "argmax_exception_ids": []
+}

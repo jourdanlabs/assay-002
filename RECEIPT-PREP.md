@@ -55,6 +55,23 @@ Captured by unauthenticated public `curl -sSL` GETs from **2026-10-13T01:03:34Z 
 
 `SPEC-FOR-INDEPENDENT-SCORER.md` was extracted mechanically from the Appendix A fenced block by `prep/extract_spec.py`, without hand editing. Source draft SHA-256 `73587d0ea57e3480a9d5a0edd6b598653b4536072d0b1c607725090d2bfff78b`; extractor asserted the expected first/last content. Output: **7,030 bytes**, SHA-256 `d448ca7f83ffa1e276af032f70f7c7bca353d96774258d1a40f7e0854e3c994d`.
 
+## §12.6 Harness
+
+Starting copies were assay-001 `run.py` / `score.py` / `controls.py` (byte-identical at copy time); `permute.py` was not copied because its construction now lives in the frozen permutations file and the P2 step in `run.py`. Current SHA-256:
+
+- `harness/run.py` `1faff62fe44b8b1e68900382ed48bfb41814e9b81271b633e7100877e164d22f`
+- `harness/score.py` `1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a`
+- `harness/pairs.py` `86915d66fa7d20067a8a8550bebe50dbbb4e0e01ee389e59ebe360c2717f545f`
+- `harness/controls.py` `d1c581c7bbe9a111c6676a2ecc1a56217ddb0c82b05ee3f1561a5fb11da9c701`
+
+`run.py` implements the registered key check, smoke, drift, three-pass and paired P2 steps; FREEZE/CORPUS/DOCS hash verification before a key load; protocol hash from `FREEZE.sha256`; §8.3 retries; 401/402/403 stop; rolling-100 circuit breaker (60 s pause, halved concurrency, trips in the manifest); the 60M running cap meter plus the §9 Rule-1 projection check before drift-start; required `--location`; and sealed per-step manifests. Offline fake-transport probes (`/tmp/assay2_run_tests.py`, not a shipped artifact) passed: 429→500→200 recorded attempts/retries with waits `[7, 2]` s (Retry-After honored), 403 and network errors were not retried, cap admission stopped at the cap, the breaker tripped once at 100/100 retry-needed completions, a 403 stopped later work, and P2 sent canonical then frozen-shuffled criteria. **No real API calls were made and the key was not loaded.**
+
+## §12.7 / §14 Controls
+
+Command: `python3 harness/controls.py` (seed 1). Final scorer SHA-256 `1141cd2c…00c8e2a`, tolerance **0.02**, recorded inside every per-control score output and in `controls/CONTROL-RESULTS.json` (SHA-256 `3c8297f4a54fb03bc9a6e4d175b5df72cfe39683ec09794136e4427ae8324b9e`).
+
+Result: **PASS — 52/52 checks.** Banking77 / CLINC150 headline control values: uniform-random ECE 0.001 / 0.001, accuracy 0.014 / 0.0056; overconfident ECE 0.986 / 0.9944; perfect-oracle ECE 0.0 / accuracy 1.0; broken-schema caught exactly **29 / 59** injected breaks; rounded-sums designated **308 / 550** records at sum 0.99, counted by `sum_off_1e3`, with 0 violations at 0.02 and calibration n unchanged (3,080 / 5,500). Shuffle-invariance, seed determinism, pairs-self (0 flips) and pairs-mutated (exactly 17 flips per corpus) all passed. Synthetic control inputs, per-control score JSONs and pair outputs are under `controls/`.
+
 ## Pending at this commit
 
-§12.6 harness edits · §12.7/§14 controls · §12.8 `FREEZE.sha256` · §12.9 freeze commit. Nothing runs before Pan gates the freeze.
+`PROTOCOL.md` freeze copy, §12.8 `FREEZE.sha256`, and §12.9 freeze commit for Pan's gate. Nothing runs before Pan gates the freeze.

@@ -1,0 +1,55 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-pairs.py",
+  "file": "harness/pairs.py",
+  "sha256": "86915d66fa7d20067a8a8550bebe50dbbb4e0e01ee389e59ebe360c2717f545f",
+  "score_sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a"
+ },
+ "inputs": {
+  "file_a": {
+   "path": "controls/banking77/perfect-oracle.jsonl",
+   "sha256": "ffa1cfd6101fecff5bf293b4de979d7d0a54c111ee5a9ed6688530b6f314981f",
+   "tag": "-"
+  },
+  "file_b": {
+   "path": "controls/banking77/pairs-mutated-17.jsonl",
+   "sha256": "fbbbd0c5261529f5dcc9991e0a9a693188291d501a16e7b71ca52891929f5649",
+   "tag": "-"
+  },
+  "labels": {
+   "path": "labels/banking77.json",
+   "sha256": "d257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48"
+  }
+ },
+ "metrics": {
+  "n_pairs": 3080,
+  "flips": 17,
+  "flip_rate": 0.0055,
+  "both_le09": 0,
+  "both_lt09": 0,
+  "acc_A_flipped": 1.0,
+  "acc_B_flipped": 0.0,
+  "acc_stable": 1.0,
+  "absdp_median": 0.0,
+  "absdp_gt005_share": 0.0,
+  "cross_09": 0
+ },
+ "supplementary": {
+  "absdp_all_quantiles": {
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "p95": 0.0,
+   "max": 0.0
+  },
+  "absdp_stable_quantiles": {
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "p95": 0.0,
+   "max": 0.0
+  }
+ }
+}

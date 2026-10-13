@@ -1,0 +1,163 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-score.py",
+  "file": "harness/score.py",
+  "sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a",
+  "sum_tolerance": 0.02
+ },
+ "corpus": "banking77",
+ "pass": null,
+ "completed": true,
+ "input": {
+  "path": "controls/banking77/rounded-sums.jsonl",
+  "sha256": "2fc79d3dfac3c819d8064b20b35b0a65f005eaa561e2d64e025dd4ebbaae8869"
+ },
+ "labels": {
+  "path": "labels/banking77.json",
+  "sha256": "d257e168e30e0605556d45a71eb41a556bdbf6d73276b449db255307f3de7f48",
+  "count": 77
+ },
+ "manifest": null,
+ "latency_location": null,
+ "latency_note": null,
+ "record_ts_min": 0.0,
+ "record_ts_max": 0.0,
+ "metrics": {
+  "records": 3080,
+  "non_200": 0,
+  "non_200_by_status": {},
+  "scored": 3080,
+  "violations": 0,
+  "violations_documented": 0,
+  "violations_undocumented_only": 0,
+  "sum_min": 0.99,
+  "sum_max": 1.0,
+  "sum_off_1e3": 308,
+  "accuracy": 1.0,
+  "mean_p": 0.999,
+  "signed_gap": -0.001,
+  "ECE": 0.001,
+  "ECE_ci": [
+   0.0009,
+   0.0011
+  ],
+  "noise_mean": 0.0004,
+  "noise_p95": 0.001,
+  "ECE_equal_mass": 0.001,
+  "MCE_all": 0.001,
+  "MCE_50": 0.001,
+  "Brier": 0.0,
+  "direction": "under",
+  "bins": [
+   {
+    "bin": 9,
+    "n": 3080,
+    "mean_p": 0.999,
+    "acc": 1.0,
+    "gap": -0.001
+   }
+  ],
+  "gt09": {
+   "n": 3080,
+   "share": 1.0,
+   "acc": 1.0,
+   "wilson": [
+    0.9988,
+    1.0
+   ]
+  },
+  "ge09": {
+   "n": 3080,
+   "share": 1.0,
+   "acc": 1.0,
+   "wilson": [
+    0.9988,
+    1.0
+   ]
+  },
+  "atom1": {
+   "n": 2772,
+   "share": 0.9,
+   "acc": 1.0,
+   "wilson": [
+    0.9986,
+    1.0
+   ]
+  },
+  "floor": {
+   "wrong_all": 0,
+   "wrong_shipped": 0,
+   "right_share_shipped": 1.0,
+   "refused_share": 0.0
+  },
+  "argmax_exceptions": 0,
+  "latency_median": 100.0,
+  "latency_p95": 100.0,
+  "latency_p99": 100.0,
+  "attempts": {
+   "1": 3080
+  },
+  "models": {
+   "control": 3080
+  },
+  "input_tokens_sum": 0,
+  "conf_deciles": [
+   {
+    "n": 308,
+    "mean_confidence": 0.99,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   },
+   {
+    "n": 308,
+    "mean_confidence": 1.0,
+    "accuracy": 1.0
+   }
+  ],
+  "conf_monotone": true,
+  "ECE_conf": 0.001,
+  "conf_atom1_share": 0.9,
+  "oos": null
+ },
+ "violation_records": [],
+ "argmax_exception_ids": []
+}

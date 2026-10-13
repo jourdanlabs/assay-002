@@ -1,0 +1,55 @@
+{
+ "scorer": {
+  "name": "assay-002-primary-pairs.py",
+  "file": "harness/pairs.py",
+  "sha256": "86915d66fa7d20067a8a8550bebe50dbbb4e0e01ee389e59ebe360c2717f545f",
+  "score_sha256": "1141cd2c1841f847ee7274ef1695351791a5bf2f47b1fbe63f4f7940f00c8e2a"
+ },
+ "inputs": {
+  "file_a": {
+   "path": "controls/clinc150/perfect-oracle.jsonl",
+   "sha256": "1fd1c5d8c298800d00b22a7da94b5e178a914d215a0c3fab60e1d40c3cec6795",
+   "tag": "-"
+  },
+  "file_b": {
+   "path": "controls/clinc150/pairs-mutated-17.jsonl",
+   "sha256": "4784b9b49a0a99275c1607c0588c9a42e345ac63ba689208020547dbdbb436f3",
+   "tag": "-"
+  },
+  "labels": {
+   "path": "labels/clinc150.json",
+   "sha256": "c06d3c60f52659311549b6b2f26b9fc5d9e5428b548d970da5b8c37582ccb9c1"
+  }
+ },
+ "metrics": {
+  "n_pairs": 5500,
+  "flips": 17,
+  "flip_rate": 0.0031,
+  "both_le09": 0,
+  "both_lt09": 0,
+  "acc_A_flipped": 1.0,
+  "acc_B_flipped": 0.0,
+  "acc_stable": 1.0,
+  "absdp_median": 0.0,
+  "absdp_gt005_share": 0.0,
+  "cross_09": 0
+ },
+ "supplementary": {
+  "absdp_all_quantiles": {
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "p95": 0.0,
+   "max": 0.0
+  },
+  "absdp_stable_quantiles": {
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "p95": 0.0,
+   "max": 0.0
+  }
+ }
+}
