@@ -1,0 +1,77 @@
+{
+  "captured_start_utc": "2026-10-13T01:03:34Z",
+  "captured_end_utc": "2026-10-13T01:03:35Z",
+  "capture_method": {
+    "markdown_and_text": "curl -sSL from the listed public URL, bytes preserved without normalization",
+    "launch_and_terms_text": "The committed prep/open13_strip.py removes script/style blocks, replaces HTML tags with newlines, unescapes entities, strips each nonempty line, and joins nonempty lines with newlines. It does not add a final newline."
+  },
+  "prior_capture_comparison": {
+    "prior_capture_utc": "2026-10-12T23:58:07Z",
+    "decisions-api.md": {
+      "expected_sha256": "65fa1462bbf2bdb05b7fdb2dea76f4509582f37e135934fb5e33314d4a774ea2",
+      "observed_sha256": "65fa1462bbf2bdb05b7fdb2dea76f4509582f37e135934fb5e33314d4a774ea2",
+      "result": "exact byte match"
+    },
+    "llms.txt": {
+      "expected_sha256": "69f877425ea8ece1125570f024ae8c0be667e74bbb81045f1273f254c5b21528",
+      "observed_sha256": "69f877425ea8ece1125570f024ae8c0be667e74bbb81045f1273f254c5b21528",
+      "result": "exact byte match"
+    },
+    "launch post text": {
+      "expected_sha256": "1583ec9cfeb9c0b984daf6fd87f94400ff6dddb932808df612119952d3714c6a",
+      "observed_extracted_text_sha256": "9d25ea04f812f00565d5fa0d5332dfc84b2519c6c38c94be307fa93f910b0d23",
+      "observed_raw_html_sha256": "25e968e055bc4aae646d20e91d864f011737ab975ef18d70fbbf48865fb4f85d",
+      "result": "byte mismatch; the prior text-extraction method was not available to reproduce, so this does not by itself establish a page-content change. Raw HTML and the exact derived text are both preserved for Pan's gate comparison."
+    }
+  },
+  "items": [
+    {
+      "name": "Decisions API page (markdown)",
+      "source_url": "https://docs.subq.ai/markdown/endpoints/decisions-api.md",
+      "file": "docs/decisions-api.md",
+      "sha256": "65fa1462bbf2bdb05b7fdb2dea76f4509582f37e135934fb5e33314d4a774ea2"
+    },
+    {
+      "name": "llms.txt",
+      "source_url": "https://docs.subq.ai/llms.txt",
+      "file": "docs/llms.txt",
+      "sha256": "69f877425ea8ece1125570f024ae8c0be667e74bbb81045f1273f254c5b21528"
+    },
+    {
+      "name": "Models page (markdown)",
+      "source_url": "https://docs.subq.ai/markdown/using-the-api/models.md",
+      "file": "docs/models.md",
+      "sha256": "0a183f9c9e9bf69b731192c71106586cd3e01598bea064c703a2e0bbe0456d6d"
+    },
+    {
+      "name": "Data-retention page (markdown)",
+      "source_url": "https://docs.subq.ai/markdown/using-the-api/data-retention.md",
+      "file": "docs/data-retention.md",
+      "sha256": "27825993c6a9f355b23491880e4cd72958242d68c0b9da6f9a7de6d1ba9ac049"
+    },
+    {
+      "name": "Launch post (raw HTML)",
+      "source_url": "https://subq.ai/introducing-subq-snap",
+      "file": "docs/introducing-subq-snap.html",
+      "sha256": "25e968e055bc4aae646d20e91d864f011737ab975ef18d70fbbf48865fb4f85d"
+    },
+    {
+      "name": "Launch post (extracted text)",
+      "source_url": "https://subq.ai/introducing-subq-snap",
+      "file": "docs/introducing-subq-snap.txt",
+      "sha256": "9d25ea04f812f00565d5fa0d5332dfc84b2519c6c38c94be307fa93f910b0d23"
+    },
+    {
+      "name": "Terms (raw HTML)",
+      "source_url": "https://subq.ai/terms",
+      "file": "docs/terms.html",
+      "sha256": "fadddcae213dbe2677f8e7f550a01098153bb5a83b662c5f3f068cb9f15e6607"
+    },
+    {
+      "name": "Terms (extracted text)",
+      "source_url": "https://subq.ai/terms",
+      "file": "docs/terms.txt",
+      "sha256": "55abe3756f1733f29a937219d4df88d6eeeb4c3a5458f258058551adc739076b"
+    }
+  ]
+}

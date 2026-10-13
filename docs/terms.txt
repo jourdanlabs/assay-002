@@ -1,0 +1,167 @@
+Subquadratic — Efficiency is Intelligence
+Products
+SubQ Snap
+Long-context decision model
+SubQ Small
+Long-context language model
+Research
+Contact Sales
+Try it now
+Contact Sales
+Try it now
+Terms of Service
+Effective Date: October 12, 2026
+These Terms of Service ("Terms") govern access to and use of Subquadratic's artificial intelligence services, including our foundational models, APIs, and any associated software, documentation, and websites (together, the "Services"). These Terms form an agreement between Subquadratic Inc., a Delaware corporation ("Subquadratic", "we", "our" or "us") and the person or entity that accepts them ("Customer" or "you").
+The Services are offered solely for business and commercial use. They are not intended for personal, household, or consumer purposes.
+By accepting these Terms, creating an account, purchasing credits, accessing the Services, or executing an order that references these Terms, you agree to them. If you accept on behalf of an entity, you represent that you have authority to bind that entity, and "you" refers to that entity.
+Order of precedence.
+If Customer and Subquadratic have executed an API Services Agreement or other written agreement covering the Services, that agreement controls over these Terms to the extent of any conflict. Otherwise these Terms, together with any order Customer places and the policies referenced here, are the agreement between us.
+1. Accounts and Access
+Authority.
+You will provide accurate and complete registration and billing information and keep it current. You must be at least 18 years old to create an account, and you may not create multiple accounts to evade usage limits, credit limits, or enforcement actions.
+Authorized Users.
+You may permit your employees, contractors, and other personnel ("Authorized Users") to access the Services on your behalf. Each Authorized User must be at least 18 years old. You are responsible for your Authorized Users' compliance with these Terms and for all activity under your account, and you will ensure that no individual under 18 is given access.
+Credentials.
+You will keep API keys and account credentials confidential, will not share them outside your Authorized Users, and will notify us promptly at
+security@subq.ai
+if you learn of any unauthorized access.
+End Users.
+If you make the Services available to your own customers or end users through your applications, you remain responsible for their use as if it were your own, and you will maintain terms with them that are at least as protective as these Terms.
+2. Use of the Services
+Permitted use.
+Subject to these Terms, we grant you a non-exclusive, non-transferable right to access and use the Services during the term, including submitting prompts to and receiving completions from our models, for your internal business purposes and for the applications you build on the Services.
+Acceptable Use.
+You will comply with all applicable laws and with our Usage Policy, which is incorporated into these Terms. You will not, and will not permit any Authorized User or End User to:
+Use the Services in a way that infringes, misappropriates, or violates anyone's rights
+Modify, copy, lease, sell, or distribute any part of the Services
+Reverse engineer, decompile, or attempt to discover the source code, model weights, or underlying components of the Services, or assist anyone in doing so, except to the extent this restriction is prohibited by applicable law
+Use Output to train, fine-tune, distill, or otherwise develop any machine learning model, except as we expressly permit in writing
+Extract data or Output programmatically in violation of our rate limits or documentation
+Circumvent rate limits, protective measures, or safety mitigations, or probe the Services for vulnerabilities except under a written testing authorization from us
+Use the Services to create content that exploits or harms minors
+Use the Services to generate misleading deepfakes, synthetic identities, or manipulated content designed to deceive
+Deploy Output in end-user-facing applications without disclosing that the content is AI-generated, where required by applicable law or our Usage Policy
+Submit prohibited data types as defined in our Usage Policy, including special categories of personal data, protected health information outside a BAA, or payment card data, without our prior written agreement
+3. Customer Content
+Definitions.
+Input means the prompts, text, files, documents, images, and other data you or your Authorized Users submit to the Services. Output means what the Services generate in response. Input and Output together are "Customer Content."
+Ownership.
+As between the parties, you retain all rights in Input and own Output. We assign to you all our right, title, and interest, if any, in Output.
+License to us.
+You grant us a non-exclusive, worldwide, royalty-free license to use, host, store, reproduce, and process Customer Content solely to provide, maintain, and secure the Services, to comply with applicable law, and to enforce these Terms and our policies. This license ends when the relevant Customer Content is deleted, except as described in Section 4.
+Your responsibility.
+You are responsible for Customer Content and represent that you have all rights, licenses, consents, and permissions necessary to submit Input to the Services and to allow us to process it as described here.
+We do not train on Customer Content.
+We do not use Customer Content to train or improve our foundational models. This commitment does not apply where you expressly direct us otherwise in writing, and it does not prevent us from reviewing Customer Content, through automated systems and, where our systems flag a potential violation or where required to investigate a report, limited human review, to detect and prevent violations of our Usage Policy and other misuse of the Services.
+Similarity of Output.
+Output may not be unique, and other customers may receive similar output. Our assignment above does not extend to other customers' output.
+4. Data Protection
+Our Privacy Policy describes how we handle personal information for which we are the controller. Where we process personal data on your behalf as a processor, our Data Processing Agreement applies and is incorporated into these Terms. Where you are a covered entity or business associate and the Services will process protected health information, the parties must execute a Business Associate Agreement before any PHI is submitted, and you will not submit PHI until it is in place. Self-serve accounts are not eligible for a Business Associate Agreement and may not submit protected health information.
+Retention.
+We retain Input and Output, including related safety classification results, for no more than thirty (30) days after processing, after which they are deleted, unless longer retention is required by law or is reasonably necessary to protect the Services, Subquadratic, or any third party from harm. We may review Input and Output through automated systems and, where those systems flag a potential violation, limited human review, solely to enforce these Terms and our Usage Policy, and we never use this content to train our models. Zero data retention is available on request and subject to our approval; where enabled, we do not retain Input or Output after processing, except that content our systems identify as potential child sexual abuse material may be retained for review and reporting as required by law.
+5. Confidentiality
+Each party may receive confidential information from the other. The receiving party will use it only to perform under these Terms, will protect it with at least reasonable care, and will not disclose it except to personnel and advisors who need it and are bound by confidentiality obligations. These obligations do not apply to information that is public through no fault of the receiving party, was known to it without restriction, is independently developed, or is rightfully received from a third party. A party may disclose confidential information where legally compelled, after giving reasonable notice where permitted. Customer Content is Customer's confidential information.
+6. Fees and Payment
+Fees.
+You will pay the fees set out in your order or in our published pricing. Usage-based fees are calculated on metrics such as tokens processed, files or images processed, or API calls made.
+Self-serve accounts.
+Unless we have approved your account for invoicing or you have sufficient promotional or free credits available, you must purchase prepaid credits with a credit or debit card before using the Services, and usage is deducted from your credit balance as it occurs. If we make automatic top-up available and you enable it, you authorize us to charge your payment method in the amount and at the threshold you select until you turn it off. Turning off automatic top-up stops future automatic purchases but does not reverse charges already made or affect credits already purchased. When your credit balance reaches zero, we may block new requests until you add credits; requests already in progress when your balance reaches zero may complete, and you will pay for them. A failed automatic top-up charge will not block your access while credits remain. Prepaid credits do not expire and are non-refundable and non-transferable, except as required by law, as stated in Section 7, or as provided in the Usage Policy. Promotional or free credits are subject to any terms shown when they are offered and may expire or be revoked at any time. Billing disputes must be submitted to
+billing@subq.ai
+within 30 days of the charge.
+Invoicing.
+If you have an order or we have approved your account for invoicing, then unless your order says otherwise, we invoice monthly in arrears and payment is due within 30 days of the invoice date. Amounts not paid when due may accrue interest at 1.5% per month or the maximum rate permitted by law, whichever is lower.
+Taxes.
+Fees are exclusive of taxes. You are responsible for all taxes other than those based on our net income.
+Suspension for non-payment.
+If an invoice is more than 30 days overdue, we may suspend access after giving you written notice and a reasonable opportunity to cure.
+Price changes.
+We may change our published pricing on at least 30 days' notice, effective at the start of your next renewal or billing period or, for self-serve accounts, on the effective date stated in the notice. Pricing in a signed order is fixed for that order's term. Price changes do not reduce the dollar value of credits already purchased.
+7. Term, Suspension, and Termination
+Term.
+These Terms apply from when you first access the Services until terminated.
+Termination for convenience.
+Either party may terminate on 30 days' written notice, unless an order specifies a term, in which case that term controls. You may close a self-serve account at any time, effective immediately, through your account settings or by notice to us.
+Termination for cause.
+Either party may terminate if the other materially breaches and fails to cure within 30 days of written notice, or immediately on the other's insolvency or bankruptcy. We may also terminate a self-serve account immediately on notice if you breach these Terms or the Usage Policy.
+Suspension.
+We may suspend access, in whole or in part, if we determine that your use violates the Usage Policy, poses a security risk or risk of harm to us or others, or must be suspended to comply with law. We will give notice where practicable and will limit suspension to what the circumstances require.
+Effect.
+On termination, your right to access the Services ends and you will pay all amounts accrued through the termination date. We will delete Customer Content in accordance with Section 4. Unused prepaid credits are forfeited on termination, except that if we terminate a self-serve account for convenience, we will refund unused prepaid credits.
+Survival.
+These sections survive termination: Customer Content (other than the license to access the Services), Confidentiality, Fees and Payment for amounts accrued, Our Intellectual Property, Disclaimer of Warranties, Limitation of Liability, Indemnification, and General Terms.
+8. Beta and Preview Services
+We may offer features identified as beta, preview, experimental, or early access. These are provided as-is, without warranty or support, may be changed or discontinued at any time, and may not be covered by our standard security or availability commitments. You may choose not to use them.
+9. Our Intellectual Property
+We and our affiliates own all right, title, and interest in the Services, including our models, model weights, algorithms, software, and documentation, and all improvements to them. No rights are granted except as expressly stated in these Terms. You may use our name and logo only in accordance with our Brand Guidelines.
+10. Feedback
+If you provide suggestions or feedback about the Services, we may use it without restriction or compensation. Feedback does not include Customer Content, and providing feedback does not give us the right to use Customer Content to train our models.
+11. Service Quality
+You acknowledge that:
+Output may be inaccurate, incomplete, outdated, or unsuitable for your intended use, and you will independently verify Output before relying on it for consequential decisions
+The Services are not a substitute for professional advice, and Output is not legal, medical, financial, or other professional guidance
+You are solely responsible for decisions made and actions taken based on Output, and for the design and deployment of any application you build on the Services
+You will implement human review appropriate to your use case where Output affects individuals
+12. Disclaimer of Warranties
+EXCEPT AS EXPRESSLY STATED IN THESE TERMS, THE SERVICES ARE PROVIDED "AS IS." TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE AND OUR AFFILIATES AND LICENSORS DISCLAIM ALL WARRANTIES, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SATISFACTORY QUALITY, NON-INFRINGEMENT, AND QUIET ENJOYMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING OR TRADE USAGE. WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, ACCURATE, OR ERROR FREE, OR THAT OUTPUT WILL BE ACCURATE OR SUITABLE FOR ANY PURPOSE.
+13. Limitation of Liability
+NEITHER PARTY WILL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING LOSS OF PROFITS, GOODWILL, USE, OR DATA, EVEN IF ADVISED OF THE POSSIBILITY. EACH PARTY'S AGGREGATE LIABILITY UNDER THESE TERMS WILL NOT EXCEED THE GREATER OF (A) THE FEES PAID OR PAYABLE BY CUSTOMER FOR THE SERVICES IN THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO LIABILITY AND (B) US$100.
+THESE LIMITS DO NOT APPLY TO: CUSTOMER'S PAYMENT OBLIGATIONS; EITHER PARTY'S INDEMNIFICATION OBLIGATIONS; CUSTOMER'S BREACH OF THE USAGE POLICY OR OF OUR INTELLECTUAL PROPERTY RIGHTS; OR EITHER PARTY'S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT.
+OUR AFFILIATES, SUPPLIERS, LICENSORS, AND DISTRIBUTORS ARE INTENDED THIRD PARTY BENEFICIARIES OF THIS SECTION.
+14. Indemnification
+By Customer.
+You will defend us, our affiliates, and our personnel against third-party claims arising from Customer Content, your applications, your use of the Services in violation of these Terms or the Usage Policy, or your End Users' use, and will indemnify us for resulting costs, losses, liabilities, and expenses, including reasonable attorneys' fees.
+15. Copyright Complaints
+If you believe material on the Services infringes your copyright, send notice to our designated agent:
+Subquadratic Inc.
+4040 NE 2nd Ave.
+Miami, FL 33137
+Attn: Head of Legal
+copyright@subq.ai
+Notices must include: a physical or electronic signature of a person authorized to act for the copyright owner; identification of the work claimed to be infringed; identification of the material claimed to be infringing and where it is located; your address, telephone number, and email; a statement that you have a good-faith belief the use is not authorized; and a statement, under penalty of perjury, that the information is accurate and that you are the owner or authorized to act on the owner's behalf.
+Counter-notification.
+If material you submitted was removed or disabled, you may send a counter-notification to the same address including: your signature; identification of the material and where it appeared; a statement under penalty of perjury that you have a good-faith belief it was removed by mistake or misidentification; and your name, address, and telephone number, with consent to the jurisdiction of the federal court in your district or, if outside the United States, the Southern District of Florida.
+We may remove or disable material we believe violates these Terms or is alleged to infringe, and will terminate repeat infringers where appropriate.
+16. Trade Controls
+Each party will comply with applicable trade laws, including U.S. export control and sanctions laws. You will not use, export, re-export, or provide access to the Services, our models, or model weights (a) in or for the benefit of any embargoed country or territory, (b) to any person or entity subject to sanctions or restricted-party designation, or (c) for any end use prohibited by applicable trade laws, including prohibited weapons development. You represent that you and your Authorized Users are not subject to any such designation.
+17. General Terms
+Assignment.
+You may not assign these Terms without our written consent, except that you may assign to an affiliate or to a successor in a merger, acquisition, or sale of substantially all assets, with notice. We may assign these Terms without your consent.
+Changes.
+We may update these Terms from time to time. We will give at least 30 days' notice of changes that materially and adversely affect you, by email or through the Services. Changes take effect at the start of your next renewal or billing period, or on the stated effective date for customers without a term. If you do not agree, you may terminate before the change takes effect. Your continued use of the Services after a change takes effect constitutes acceptance of the change.
+Notices.
+Notices to us go to
+legal@subq.ai
+. Notices to you go to the email address on your account or the address in your order.
+Publicity.
+Neither party will use the other's name or logo publicly without prior written consent, except that we may identify you as a customer in a customer list with your prior approval.
+Force majeure.
+Neither party is liable for failure to perform due to causes beyond its reasonable control, other than payment obligations.
+Independent contractors.
+The parties are independent contractors. These Terms create no partnership, agency, or joint venture.
+Waiver and severability.
+A failure to enforce is not a waiver. If any provision is unenforceable, it will be enforced to the maximum extent permissible and the rest will remain in effect.
+Entire agreement.
+These Terms, together with the Usage Policy, Privacy Policy, DPA, any BAA, and any order, are the entire agreement on this subject and supersede prior agreements, subject to the order of precedence above. Terms in any purchase order or vendor form are rejected and have no effect.
+Governing law and venue.
+Delaware law governs, without regard to conflicts principles. The parties consent to exclusive jurisdiction and venue in the state and federal courts located in Delaware, and each waives any right to a jury trial. Each party may bring claims against the other only in its individual capacity and not as a plaintiff or class member in any purported class, collective, or representative proceeding.
+Contact.
+Questions about these Terms:
+legal@subq.ai
+.
+Frontier AI research company building models that scale efficiently.
+Products
+SubQ Snap
+SubQ Medium
+Company
+Research
+Docs
+Connect
+X
+LinkedIn
+Discord
+© 2026 Subquadratic
+Privacy
+·
+Terms
+·
+Usage Policy

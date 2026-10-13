@@ -41,6 +41,20 @@ Construction (§6.2 verbatim): `rng = random.Random(20260920)`; for each of the 
 - **Result: `order_first5 matched: 300/300`.** (Generator writes the file only on a full match; otherwise STOP.)
 - `labels/b77-permutations-300.json`: `{"seed": 20260920, "n": 300, "items": [{"id": "b77-0000".."b77-0299", "options": [77 labels]}]}`. SHA-256 `1649eda0c7620b04327af28252a200ea2da690f28e15de2a326b1a629ded2172`.
 
+## §12.4 Docs capture
+
+Captured by unauthenticated public `curl -sSL` GETs from **2026-10-13T01:03:34Z to 2026-10-13T01:03:35Z**. `docs/CAPTURE.json` records the source URL, byte-preserving method where applicable, item hashes, and the comparison to Pan's 2026-10-12T23:58:07Z capture.
+
+- `docs/decisions-api.md` exactly matched Pan's prior SHA-256 (`65fa1462…a774ea2`).
+- `docs/llms.txt` exactly matched Pan's prior SHA-256 (`69f87742…5b21528`).
+- Also captured `docs/models.md`, `docs/data-retention.md`, launch-post HTML + extracted text, and terms HTML + extracted text.
+- Disclosure: the extracted launch-post text does **not** reproduce Pan's prior text hash (`9d25ea04…10b0d23` observed here versus `1583ec9c…3714c6a` in the draft). The prior extraction method was unavailable; the raw HTML (`25e968e0…b4f85d`) and this capture's exactly described extraction (`prep/open13_strip.py`) are both preserved. This is a byte-artifact mismatch requiring Pan's gate comparison; it is not silently treated as a match.
+- `DOCS.sha256` covers all nine files in `docs/`, including `docs/CAPTURE.json`; `shasum -a 256 -c DOCS.sha256` reported **9/9 OK**. `DOCS.sha256` SHA-256: `1edfd8f6d246482728fb8414ccd7172a746a660af357ff5ae56e46c11d8862e2`.
+
+## §12.5 Scorer spec
+
+`SPEC-FOR-INDEPENDENT-SCORER.md` was extracted mechanically from the Appendix A fenced block by `prep/extract_spec.py`, without hand editing. Source draft SHA-256 `73587d0ea57e3480a9d5a0edd6b598653b4536072d0b1c607725090d2bfff78b`; extractor asserted the expected first/last content. Output: **7,030 bytes**, SHA-256 `d448ca7f83ffa1e276af032f70f7c7bca353d96774258d1a40f7e0854e3c994d`.
+
 ## Pending at this commit
 
-§12.4 docs capture · §12.5 scorer spec · §12.6 harness edits · §12.7/§14 controls · §12.8 `FREEZE.sha256` · §12.9 freeze commit. Nothing runs before Pan gates the freeze.
+§12.6 harness edits · §12.7/§14 controls · §12.8 `FREEZE.sha256` · §12.9 freeze commit. Nothing runs before Pan gates the freeze.
