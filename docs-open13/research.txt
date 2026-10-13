@@ -1,0 +1,225 @@
+SubQ Snap — The first decision model for real enterprise work | Subquadratic
+Skip to content
+Products
+SubQ Snap
+Long-context decision model
+SubQ Small
+Long-context language model
+Research
+Contact Sales
+Try it now
+Contact Sales
+Try it now
+The first
+long-context
+decision model
+for real
+enterprise work.
+SubQ Snap is a multimodal decision model built for fast, long-context decisions in enterprise agentic workflows.
+Try it now
+Read About Snap
+Free 100M tokens for the first 10,000 users
+Built by researchers and engineers from
+Core Benefits
+Built for structured decisions in agentic workflows.
+01
+Make better decisions with long, multimodal context.
+Today's decision models see 32K tokens, a sliver of a real codebase. Snap handles up to 384K, enough for the whole repo, data room or agent history, so every call is grounded in all the context it needs.
+02
+Stop paying frontier prices for routine decisions.
+Most agent steps are simple calls: pick a tool, open a file, check a result. Snap handles them at a fraction of the cost and leaves only the hard work to your LLM.
+03
+Seconds, not minutes.
+A decision that takes an LLM minutes takes Snap seconds. Your agents move faster without giving up a single point of accuracy.
+Benchmarks
+The industry leader in short and long context
+decision-making.
+Long-context decisions
+Decision RULER (256K) and Decision LCR
+Jev
+99.8
+N/A
+Jev max
+32K context
+Decision RULER · 256K
+Retrieval and tracking
+74.0
+48.0
+Decision LCR
+Multi-document · Jev chunked
+Short-context decisions
+Nimble 13 and Decision Index 0.2.1
+Jev
+82.9
+76.0
+Nimble 13
+Accuracy, 13 decision sets
+61.7
+57.9
+Decision Index
+Skill, public suite
+Enterprise workflows
+Snap minus Jev, 16 benchmarks
+Snap leads (13)
+Snap trails (3)
+Average: 67.5 vs 61.6 (+6.0)
++22.0
+PhishNChips
+phishing
++16.7
+CRUXEval
+code
++13.5
+RAGTruth
+RAG checks
++12.0
+FinEntity
+finance
++11.6
+ContractNLI
+legal
++8.5
+HoVer
+claims
++4.9
+ESCI
+search
++3.8
+NLI4CT
+clinical
++3.7
+BRIGHT
+ranking
++3.2
+ToolRet
+tool search
++2.3
+CLINC150
+intent
++1.9
+BFCL
+functions
++1.1
+BANKING77
+support
+−0.6
+ACOS
+reviews
+−1.6
+API-Bank
+API calls
+−7.6
+When2Call
+routing
+About Snap
+Use cases
+Built with
+Context curation within coding agents
+Multimodal recommendation system
+Support Queue Triage
+Pricing
+Efficiency on Demand.
+Free 100M tokens for the first 10,000 users
+In
+$0.05
+per 1M tokens
+Input
+Out
+Free
+Output
+How it works
+What is a
+long-context
+decision model?
+Decision models are AI models that evaluate supplied context against defined questions and return structured answers. They excel when the deep reasoning or nuanced outputs of a frontier LLM are not required.
+Dimensions
+Language model
+Output
+A choice, score, or label
+Open-ended text
+Answer space
+Fixed, defined up front
+Unbounded
+Inference
+Seconds
+Minutes for the same task
+Parsing needs
+None. Structured output your code uses directly
+Parse and validate free text
+Best at
+Routing, ranking, classifying, yes/no calls
+Reasoning, writing, open-ended work
+Weak at
+Open-ended generation
+Fast, repeated, structured calls
+Place in agent
+The decision points: route, filter, score
+Planning and generation
+The subquadratic breakthrough.
+Today's transformer-based LLMs waste compute by processing every possible relationship between tokens, but only a small fraction of these relationships matter. (This is called “quadratic scaling.”)
+SubQ is built differently. Using a proprietary algorithm called
+Subquadratic Sparse Attention (SSA)
+, it isolates the tokens and relationships that matter, ensuring compute is used efficiently.
+Read the Research
+0
+128K
+512K
+1M
+2M
+TOKENS
+8×
+31.5×
+64.5×
+128×
+1,008 PFLOP
+7.8 PFLOP
+Frontier Models (Dense Attention)
+SubQ (SSA)
+Enterprise
+Interested in
+enterprise access?
+Contact sales.
+SubQ 1.1 Small
+The best model for data-intensive workloads.
+Currently in Early Access
+Reason across
+millions of tokens in one prompt
+: entire repos, whole artifacts, and long-running agent state, with context to spare.
+Learn More
+Research
+From the lab.
+Product · October 12, 2026
+Introducing SubQ Snap: A Long-Context Decision Model for Enterprise Agents
+Read more →
+Research · June 16, 2026
+Introducing SubQ 1.1 Small
+Read more →
+Partnerships · May 14, 2026
+We’re Partnering with LayerLens to Evaluate SubQ
+Read more →
+Research · May 15, 2026
+How SSA Makes Long Context Practical
+Read more →
+Rewriting the
+Scaling Laws
+of AI
+Subquadratic
+is a frontier AI research company that believes the architecture layer is the highest-leverage surface in AI. While other major labs focus on incremental improvements to Transformer models, we're pushing foundational change at the architecture level to build models and products that scale efficiently.
+Built by researchers and engineers from
+Frontier AI research company building models that scale efficiently.
+Products
+SubQ Snap
+SubQ Medium
+Company
+Research
+Docs
+Connect
+X
+LinkedIn
+Discord
+© 2026 Subquadratic
+Privacy
+·
+Terms
+·
+Usage Policy
