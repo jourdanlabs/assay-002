@@ -1,0 +1,373 @@
+{
+ "P2_shuffled_vs_original": [
+  {
+   "id": "b77-0006",
+   "choice_A": "card_arrival",
+   "p_A": 0.478688,
+   "choice_B": "card_delivery_estimate",
+   "p_B": 0.539364
+  },
+  {
+   "id": "b77-0009",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.674227,
+   "choice_B": "card_arrival",
+   "p_B": 0.499508
+  },
+  {
+   "id": "b77-0010",
+   "choice_A": "card_arrival",
+   "p_A": 0.635674,
+   "choice_B": "card_delivery_estimate",
+   "p_B": 0.563997
+  },
+  {
+   "id": "b77-0015",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.526418,
+   "choice_B": "card_arrival",
+   "p_B": 0.659093
+  },
+  {
+   "id": "b77-0021",
+   "choice_A": "card_arrival",
+   "p_A": 0.497534,
+   "choice_B": "card_delivery_estimate",
+   "p_B": 0.768089
+  },
+  {
+   "id": "b77-0025",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.444102,
+   "choice_B": "card_arrival",
+   "p_B": 0.844699
+  },
+  {
+   "id": "b77-0027",
+   "choice_A": "card_arrival",
+   "p_A": 0.579854,
+   "choice_B": "card_delivery_estimate",
+   "p_B": 0.532257
+  },
+  {
+   "id": "b77-0032",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.557455,
+   "choice_B": "card_arrival",
+   "p_B": 0.48865
+  },
+  {
+   "id": "b77-0033",
+   "choice_A": "card_arrival",
+   "p_A": 0.803486,
+   "choice_B": "card_delivery_estimate",
+   "p_B": 0.52391
+  },
+  {
+   "id": "b77-0034",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.683039,
+   "choice_B": "card_arrival",
+   "p_B": 0.680947
+  },
+  {
+   "id": "b77-0037",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.425911,
+   "choice_B": "pending_transfer",
+   "p_B": 0.564285
+  },
+  {
+   "id": "b77-0038",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.483241,
+   "choice_B": "card_arrival",
+   "p_B": 0.670718
+  },
+  {
+   "id": "b77-0062",
+   "choice_A": "lost_or_stolen_card",
+   "p_A": 0.566511,
+   "choice_B": "activate_my_card",
+   "p_B": 0.886991
+  },
+  {
+   "id": "b77-0064",
+   "choice_A": "lost_or_stolen_card",
+   "p_A": 0.77761,
+   "choice_B": "activate_my_card",
+   "p_B": 0.640804
+  },
+  {
+   "id": "b77-0066",
+   "choice_A": "card_arrival",
+   "p_A": 0.532273,
+   "choice_B": "card_linking",
+   "p_B": 0.313369
+  },
+  {
+   "id": "b77-0125",
+   "choice_A": "card_payment_wrong_exchange_rate",
+   "p_A": 0.366371,
+   "choice_B": "wrong_exchange_rate_for_cash_withdrawal",
+   "p_B": 0.443339
+  },
+  {
+   "id": "b77-0147",
+   "choice_A": "exchange_rate",
+   "p_A": 0.58493,
+   "choice_B": "wrong_exchange_rate_for_cash_withdrawal",
+   "p_B": 0.515802
+  },
+  {
+   "id": "b77-0148",
+   "choice_A": "exchange_charge",
+   "p_A": 0.445417,
+   "choice_B": "exchange_rate",
+   "p_B": 0.427451
+  },
+  {
+   "id": "b77-0172",
+   "choice_A": "Refund_not_showing_up",
+   "p_A": 0.61886,
+   "choice_B": "pending_card_payment",
+   "p_B": 0.320219
+  },
+  {
+   "id": "b77-0173",
+   "choice_A": "extra_charge_on_statement",
+   "p_A": 0.66079,
+   "choice_B": "transfer_fee_charged",
+   "p_B": 0.377526
+  },
+  {
+   "id": "b77-0197",
+   "choice_A": "top_up_by_bank_transfer_charge",
+   "p_A": 0.350068,
+   "choice_B": "transfer_fee_charged",
+   "p_B": 0.286486
+  },
+  {
+   "id": "b77-0201",
+   "choice_A": "pending_cash_withdrawal",
+   "p_A": 0.790905,
+   "choice_B": "declined_cash_withdrawal",
+   "p_B": 0.478598
+  },
+  {
+   "id": "b77-0210",
+   "choice_A": "pending_cash_withdrawal",
+   "p_A": 0.802507,
+   "choice_B": "declined_cash_withdrawal",
+   "p_B": 0.773594
+  },
+  {
+   "id": "b77-0219",
+   "choice_A": "pending_cash_withdrawal",
+   "p_A": 0.809813,
+   "choice_B": "declined_cash_withdrawal",
+   "p_B": 0.571286
+  },
+  {
+   "id": "b77-0236",
+   "choice_A": "cash_withdrawal_charge",
+   "p_A": 0.70853,
+   "choice_B": "declined_cash_withdrawal",
+   "p_B": 0.47808
+  },
+  {
+   "id": "b77-0246",
+   "choice_A": "pending_transfer",
+   "p_A": 0.312077,
+   "choice_B": "receiving_money",
+   "p_B": 0.340588
+  },
+  {
+   "id": "b77-0247",
+   "choice_A": "fiat_currency_support",
+   "p_A": 0.774456,
+   "choice_B": "supported_cards_and_currencies",
+   "p_B": 0.542821
+  },
+  {
+   "id": "b77-0263",
+   "choice_A": "fiat_currency_support",
+   "p_A": 0.791919,
+   "choice_B": "supported_cards_and_currencies",
+   "p_B": 0.482469
+  },
+  {
+   "id": "b77-0265",
+   "choice_A": "fiat_currency_support",
+   "p_A": 0.643189,
+   "choice_B": "supported_cards_and_currencies",
+   "p_B": 0.68164
+  },
+  {
+   "id": "b77-0280",
+   "choice_A": "get_physical_card",
+   "p_A": 0.339294,
+   "choice_B": "order_physical_card",
+   "p_B": 0.331987
+  },
+  {
+   "id": "b77-0282",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.307278,
+   "choice_B": "order_physical_card",
+   "p_B": 0.308988
+  },
+  {
+   "id": "b77-0291",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.620761,
+   "choice_B": "transfer_timing",
+   "p_B": 0.494068
+  },
+  {
+   "id": "b77-0295",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.478342,
+   "choice_B": "transfer_timing",
+   "p_B": 0.466261
+  },
+  {
+   "id": "b77-0296",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.568642,
+   "choice_B": "transfer_timing",
+   "p_B": 0.563453
+  },
+  {
+   "id": "b77-0297",
+   "choice_A": "card_delivery_estimate",
+   "p_A": 0.844088,
+   "choice_B": "card_arrival",
+   "p_B": 0.527238
+  }
+ ],
+ "P2_original_again_vs_original": [],
+ "P1_banking77_pass1_v_pass2": [
+  {
+   "id": "b77-0864",
+   "choice_A": "pending_transfer",
+   "p_A": 0.438428,
+   "choice_B": "transfer_not_received_by_recipient",
+   "p_B": 0.530949
+  },
+  {
+   "id": "b77-0880",
+   "choice_A": "fiat_currency_support",
+   "p_A": 0.58679,
+   "choice_B": "supported_cards_and_currencies",
+   "p_B": 0.452588
+  }
+ ],
+ "P1_banking77_pass1_v_pass3": [
+  {
+   "id": "b77-0887",
+   "choice_A": "topping_up_by_card",
+   "p_A": 0.367946,
+   "choice_B": "card_acceptance",
+   "p_B": 0.517697
+  },
+  {
+   "id": "b77-2250",
+   "choice_A": "fiat_currency_support",
+   "p_A": 0.517835,
+   "choice_B": "receiving_money",
+   "p_B": 0.509776
+  }
+ ],
+ "P1_banking77_pass2_v_pass3": [
+  {
+   "id": "b77-0864",
+   "choice_A": "transfer_not_received_by_recipient",
+   "p_A": 0.530949,
+   "choice_B": "pending_transfer",
+   "p_B": 0.438428
+  },
+  {
+   "id": "b77-0880",
+   "choice_A": "supported_cards_and_currencies",
+   "p_A": 0.452588,
+   "choice_B": "fiat_currency_support",
+   "p_B": 0.58679
+  },
+  {
+   "id": "b77-0887",
+   "choice_A": "topping_up_by_card",
+   "p_A": 0.367946,
+   "choice_B": "card_acceptance",
+   "p_B": 0.517697
+  },
+  {
+   "id": "b77-2250",
+   "choice_A": "fiat_currency_support",
+   "p_A": 0.517835,
+   "choice_B": "receiving_money",
+   "p_B": 0.509776
+  }
+ ],
+ "P1_clinc150_pass1_v_pass2": [
+  {
+   "id": "c150-0166",
+   "choice_A": "insurance",
+   "p_A": 0.499354,
+   "choice_B": "insurance_change",
+   "p_B": 0.487908
+  },
+  {
+   "id": "c150-0647",
+   "choice_A": "what_can_i_ask_you",
+   "p_A": 0.491093,
+   "choice_B": "what_are_your_hobbies",
+   "p_B": 0.609473
+  },
+  {
+   "id": "c150-2248",
+   "choice_A": "todo_list_update",
+   "p_A": 0.614181,
+   "choice_B": "todo_list",
+   "p_B": 0.747546
+  }
+ ],
+ "P1_clinc150_pass1_v_pass3": [],
+ "P1_clinc150_pass2_v_pass3": [
+  {
+   "id": "c150-0166",
+   "choice_A": "insurance_change",
+   "p_A": 0.487908,
+   "choice_B": "insurance",
+   "p_B": 0.499354
+  },
+  {
+   "id": "c150-0647",
+   "choice_A": "what_are_your_hobbies",
+   "p_A": 0.609473,
+   "choice_B": "what_can_i_ask_you",
+   "p_B": 0.491093
+  },
+  {
+   "id": "c150-2248",
+   "choice_A": "todo_list",
+   "p_A": 0.747546,
+   "choice_B": "todo_list_update",
+   "p_B": 0.614181
+  }
+ ],
+ "P5_banking77_start_v_end": [],
+ "P5_clinc150_start_v_end": [],
+ "status0_timeouts": [
+  "b77-2792",
+  "c150-0510",
+  "c150-0511",
+  "c150-0512",
+  "c150-0513",
+  "c150-4279",
+  "b77-0364",
+  "b77-0365",
+  "b77-0366",
+  "b77-0367"
+ ]
+}
