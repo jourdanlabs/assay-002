@@ -1,6 +1,10 @@
 # ASSAY-002: SubQ Snap — a pre-registered measurement of decision probabilities (DRAFT — pending final close and Captain's publication call)
 
-Engagement 002 in the ASSAY series. Subject: `subq-snap-preview` (Subquadratic's decision model), measured as served between **2026-10-12T22:09:13-05:00** and **2026-10-12T22:42:36-05:00** (America/Chicago), from Dallas, TX. Protocol, freeze, amendments, raw records, scorers, controls, receipts: this repository. Pre-registered freeze hash (posted publicly before the first call, freeze commit `a161a41`): `ab6a3ed265b6ae8bf3602e99315cf8eb46e3a365e2a327230fa71ac769b75f43`. Post-AMENDMENT-2 freeze hash: `2bc47eea700f0af974853f3e46680b6a52ff3e4e99834c03889c5e202a824373`.
+Engagement 002 in the ASSAY series. Subject: `subq-snap-preview` (Subquadratic's decision model), measured as served between **2026-10-12T22:09:13-05:00** and **2026-10-12T22:42:36-05:00** (America/Chicago), from Dallas, TX. Protocol, freeze, amendments, raw records, scorers, controls, receipts: this repository.
+
+**Pre-registration.** The SHA-256 of the freeze manifest, `ab6a3ed265b6ae8bf3602e99315cf8eb46e3a365e2a327230fa71ac769b75f43` (freeze commit `a161a41`), was posted publicly before the first API call: on `donttrustme.ai/assay-002.html` (verified live serving the hash at 2026-10-12 22:06:02 -0500, and again on 2026-10-12 23:13 -0500) and as the public GitHub repo `github.com/jourdanlabs/assay-002` at `a161a41` (created 22:04 -0500; `git ls-remote` verified then and again 23:13 -0500). The first API call was 2026-10-12T22:08:48-05:00. Post-AMENDMENT-2 freeze hash: `2bc47eea700f0af974853f3e46680b6a52ff3e4e99834c03889c5e202a824373`.
+
+**Roles.** Protocol author: Pan (Claude). Independent pre-freeze protocol review: none on record — a non-Claude read of the protocol was in flight at freeze time (Bulma/ChatGPT, uploaded 21:27) and had not landed before the hash was posted; the blind re-score covers scoring, not design. Runner: Toph (Grok). Blind independent re-scorer: Bulma (GPT). Third cross-check: Tifa's ASSAY-001 `rescore.py` (pinned). Gate: Pan. Final close: Pan (Claude, home). Call: Captain.
 
 There was no vendor claim to test. This is a measurement report.
 
