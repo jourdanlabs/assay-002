@@ -1,0 +1,3 @@
+pins:
+banking77 source: github PolyAI-LDN/task-specific-datasets @ 57ec275d8078af65b7731c2a98be812d844a6d6b (banking_data/test.csv, categories.json); HF card PolyAI/banking77 @ 90d4e2ee5521c04fc1488f065b8b083658768c57
+clinc150 source: HF clinc/clinc_oos @ 155b9c710419136e17307b80d0a13e68cd46b4ec plus/test-00000-of-00001.parquet
