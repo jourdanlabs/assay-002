@@ -1,4 +1,4 @@
-# ASSAY-002: SubQ Snap — a pre-registered measurement of decision probabilities (DRAFT — pending final close and Captain's publication call)
+# ASSAY-002: SubQ Snap — a pre-registered measurement of decision probabilities
 
 Engagement 002 in the ASSAY series. Subject: `subq-snap-preview` (Subquadratic's decision model), measured as served between **2026-10-12T22:09:13-05:00** and **2026-10-12T22:42:36-05:00** (America/Chicago), from Dallas, TX. Protocol, freeze, amendments, raw records, scorers, controls, receipts: this repository.
 
